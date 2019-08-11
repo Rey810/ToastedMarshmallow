@@ -133,7 +133,7 @@
 
 .hamburger {
     position: absolute;
-    bottom: 5vh;
+    bottom: 7vh;
     right: 5vw;
     z-index: 8;
 
@@ -149,7 +149,9 @@
 
 .mobileLogo {
     position: absolute;
-    height: auto;
+    height: 30em;
+    width: auto;
+    left: 0;
     z-index: 5;
     overflow: visible;
     top: 5vh;
@@ -186,6 +188,7 @@
 .mobileText {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.3em;
+    font-weight: 700;
 }
 
 
@@ -208,7 +211,7 @@
     line-height: 5vh;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
-    font-size: 0.8em;
+    font-size: 1.2em;
 }
 
 .hamburgerMenuImg {
@@ -229,13 +232,13 @@
 }
 
 .hamburgerMenu {
-    bottom: -30vh;
+    top: 30vh;
     z-index: 8;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     width: 150vw;
     overflow-x: visible;
-    right: -50vw;
+    // right: -50vw;
     opacity: 0;
     // display: none;
     background: url('../assets/hamburgerMarsh.png');
@@ -337,5 +340,38 @@
 
 .mobileCharText {
     font-family: 'Work Sans',sans-serif;
-    font-size: 0.8em;
+    font-size: 1.80vh;
+    font-weight: 700;
+}
+
+// ______________3_________________
+// ____________Services____________
+
+.mobileService{
+    font-size: 10vh;
+}
+
+.marshStickMobile{
+    top: 0vh;
+    overflow: hidden;
+    right: 30vw;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(0deg);
+}
+
+.stickMobile1{
+    transform: rotate(15deg);
+    right: 60vw;
+    top: 10vh;
+}
+.stickMobile2{
+    transform: rotate(-10deg);
+    right: 35vw;
+    top: 10vh;
+}
+
+.mobileSVG{
+    width: auto;
+    height: 35vh;
 }

@@ -79,18 +79,18 @@
             <i href="" class="col-1 fa fa-instagram"></i>
         </div>
     </div>
-    <div id="swup" class="transition-fade-right">
+    <div id="swup" class="transition-fade-right d-none d-lg-block">
         <img class='logoImg' src="assets/LogoDark.png" alt="company logo">
         <div class='row text-center fixed-top'>
 
             <a class='offset-4 col-1 links purple' data-aos='go-up' data-aos-delay="250"
-                data-aos-anchor-placement="top-top" href="index.html">Home</a>
+                data-aos-anchor-placement="top-top" href="./index.html">Home</a>
             <a class='col-1 links purple' data-aos='go-up' data-aos-delay="150" data-aos-anchor-placement="top-top"
-                href="us.html">About</a>
+                href="./us.html">About</a>
             <a class='col-1 links purple' data-aos='go-up' data-aos-delay="450" data-aos-anchor-placement="top-top"
-                href="service.html">Service</a>
+                href="./service.html">Service</a>
             <a class='col-1 links purple' data-aos='go-up' data-aos-delay="350" data-aos-anchor-placement="top-top"
-                href="work.html">Blog</a>
+                href="./work.html">Blog</a>
             <a class='offset-1 col-3 contact purple' data-aos='go-up' data-aos-delay="550"
                 data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
 
@@ -257,7 +257,7 @@
         </div>
     </div>
 
-    <div class='d-block d-lg-none' style="overflow-x: hidden">
+    <div class='d-block d-lg-none' style="overflow-x: hidden !important;">
         <div class='hamburgerMenu'>
             <img class='hamburgerClose' onclick="closeHamburger()" src="assets/CloseDark.png" alt="Exit">
             <a class='offset-4 col-7 mobileLink p40' style="left: 6vw" href="index.html">home</a>
@@ -266,19 +266,67 @@
             <a class='offset-4 col-7 mobileLink p60 purple' style="left: 12vw">Contact Us</a>
         </div>
 
-        <div class='page-purple first'>
+        <div class='page-white first' style="overflow-x:hidden;">
             <svg class='hamburger' onclick="openHamburger()" width="41" height="31">
                 <g transform="translate(-320 -8)">
-                    <rect class="hamburgerMid" width="41" height="5" rx="2.5" transform="translate(320 21)" />
+                    <rect class="hamburgerMid" width="41" style='fill:#4a3655' height="5" rx="2.5" transform="translate(320 21)" />
                     <rect class="hamburgerTop" style="fill:#f75965" width="37" height="10" rx="5"
                         transform="translate(324 29)" />
                     <rect class="hamburgerBottom" style="fill:#f75965" width="37" height="10" rx="5"
                         transform="translate(320 8)" />
                 </g>
             </svg>
-
+            <h1 class='container-fluid mobileService text-center p75 red'>Services</h1>
+            <img class="marshStickMobile stickMobile1" src="assets/marshStickDark.png" alt="">
+            <img class="marshStickMobile stickMobile2" src="assets/marshStickDark.png" alt="">
+            <img class="marshStickMobile" src="assets/marshStickDark.png" alt="">
+            <i class="p90 container-fluid text-center fa fa-chevron-down red"></i>
         </div>
-        <div class='page-red second'></div>
+        <div class='page-white second'>
+            <h1 class='col-12 text-center p5 purple'>Engineering</h1>
+            <div class='offset-3 p15 watcher redWatcher'></div>
+            <img class='p20 container-fluid mobileSVG' src="svg/robot.svg" alt="robot">
+            <p class='offset-2 col-8 text-center purple mobileText p60'>
+            Building a robot? Hate
+            doing technical documents?
+            We get it.
+            We’re all engineers too.
+            Have a look at what we
+            can do for you.</p>
+        </div>
+        <div class='page-white third'>
+            <h1 class='col-12 text-center p5 purple'>Apps</h1>
+            <div class='offset-3 p15 watcher redWatcher'></div>
+            <img class='p20 container-fluid mobileSVG' src="svg/applications.svg" alt="web">
+            <p class='offset-1 col-10 text-center purple mobileText p55'>
+            “I’ve got this great app
+            idea”
+            If that sounds like you then
+            get in touch with us.
+            We turn ideas into real
+            things. From UI design to
+            app deployment, we’ll help
+            you take the steps along
+            the way.</p>
+        </div>
+        <div class='page-white fourth'>
+            <h1 class='col-12 text-center p5 purple'>Development</h1>
+            <div class='offset-3 p15 watcher redWatcher'></div>
+            <img class='p20 container-fluid mobileSVG' src="svg/web.svg" alt="apps">
+            <p class='offset-1 col-10 text-center purple mobileText p55'>
+            We love building websites.
+            To us, your webpage is
+            your entire online presence,
+            and that’s important.
+            
+            Our team builds responsive
+            webpages, offering unique
+            user experiences.
+            People will remember
+            the page, and isn’t that
+            the entire point?
+</p>
+        </div>
     </div>
     <!-- JavaScript Libraries -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -20,7 +20,10 @@
 // @import "./svgstyles";
 
 
-
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
 @font-face {
     font-family: 'albaregular';
     src: url('../fonts/alba____.woff2') format('woff2'),
@@ -789,12 +792,10 @@ svg{
     // filter: blur(100px);
     opacity: 0.3;
     position: fixed;
-    top:0;
-    left:0;
     padding: 0;
     margin: 0;
     transform: scaleY(0);
-    height: 100vh;
+    height: 1000vh;
     width: 100vw;
     z-index: 6;
     background: $black;

@@ -4,6 +4,7 @@
 // For mobile menu
 
 function openHamburger() {
+            $('body').addClass('stop-scrolling')    
             $('body').bind('touchmove', function (e) {
                 e.preventDefault()
             })
@@ -20,6 +21,7 @@ function openHamburger() {
                 targets: ['.hamburger'],
                 duration: 500,
                 translateX: 150,
+                easing: 'easeInSine'
             })
 
             animeLib({
@@ -29,7 +31,7 @@ function openHamburger() {
                 duration: 500,
                 loop: false,
                 translateX: -20,
-                translateY: -20,
+                // translateY: -20,
             })
 
             animeLib({
@@ -56,9 +58,9 @@ function closeHamburger() {
             animeLib({
                 targets: '.hamburgerMenu',
                 easing: 'easeInOutSine',
-                translateX: 500,
+                translateX: 20,
                 // direction: 'reverse',
-                translateY: 200,
+                // translateY: 20,
                 duration: 500,
                 opacity: 0,
                 loop: false,
