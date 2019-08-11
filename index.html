@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- Page Styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- SVG INJECT -->
+    <script src="js/svg-inject.js"></script>
+    <!-- FontAwesome CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100&display=swap" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <!-- <link rel="manifest" href="icons/site.webmanifest"> -->
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/anime.min.js"></script>
+    <!-- Functions for ToastedMarshmallow site -->
+    <script src="js/animations.js"></script>
+    <script src="js/mobile.js"></script>
+    <!-- AOS library -->
+    <link href="css/aos.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <!-- Animate on scroll library -->
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+    <!-- Title -->
+    <title>Toasted Marshmallow</title>
+</head>
+
+<body>
+    <div class="contactPage">
+        <svg onclick="contactClose()" class='escape' width="65.216" height="68.021">
+            <defs>
+                <style>
+                    .e {
+                        stroke: #f75965;
+                    }
+    
+                    .x {
+                        stroke: #4a3655;
+                    }
+    
+                    .extra {
+                        stroke: #4a3655;
+                        opacity: 0;
+                    }
+                </style>
+            </defs>
+            <g transform="translate(-1738.392 -79.489)">
+                <line class="e" x2="52" y2="57" transform="translate(1745.5 84.5)" />
+                <path class="x" d="M52,0,0,57" transform="translate(1745.5 84.5)" />
+                <line class="extra" x1="52" y2="57" transform="translate(1750.5 89.5)" />
+                <line class="extra" x1="52" y2="57" transform="translate(1739.5 80.5)" />
+            </g>
+        </svg>
+        <div class='col-12 text-center textTopContact black'>Send us a message</div>
+        <a class='col-12 textMidContact black' href="mailto:">info<span
+                style='color:#f75965'>@</span>ToastedMarshmallow.co</a>
+        <div class='col-12 textInstructions text-center purple'>
+            <div class='offset-2 col-8 row'>
+                <img class='marsh1' src="assets/MarshMallow.png" alt="marsh">
+                <p class='text-center'>Let us know who you are</p>
+            </div>
+            <div class='offset-2 col-8 row'>
+                <img class='marsh2' src="assets/MarshMallow.png" alt="marsh">
+                <p>Let us know what you want done</p>
+            </div>
+            <div class='offset-2 col-8 row'>
+                <img class='marsh3' src="assets/MarshMallow.png" alt="marsh">
+                <p>Tells us what you like</p>
+            </div>
+        </div>
+        <div class='col-12 text-center socialIcons'>
+            <i href="" class="col-1 fa fa-at"></i>
+            <i href="" class="col-1 fa fa-linkedin"></i>
+            <i href="" class="col-1 fa fa-github-alt"></i>
+            <i href="" class="col-1 fa fa-instagram"></i>
+        </div>
+    </div>
+    <div class='blurbBody'></div>
+    <!-- Display for larger screens -->
+    <div id="swup" class="transition-fade-right d-none d-lg-block">
+        <img data-aos='go-up' data-aos-delay="800" data-aos-anchor-placement="top-top" class='logoImg' src="assets/LogoDark.png" alt="company logo">
+        <div class='container-fluid row text-center fixed-top' style="position: absolute">
+
+            <a class='offset-2 offset-lg-4 col-1 links' data-aos='go-up' data-aos-delay="250" data-aos-anchor-placement="top-top" href="/ToastedMarshmallow/index.html">Home</a>
+            <a class='col-1 links' data-aos='go-up' data-aos-delay="150" data-aos-anchor-placement="top-top" href="/ToastedMarshmallow/us.html">About</a>
+            <a class='col-1 links' data-aos='go-up' data-aos-delay="450" data-aos-anchor-placement="top-top" href="/ToastedMarshmallow/service.html">Service</a>
+            <a class='col-1 links' data-aos='go-up' data-aos-delay="350" data-aos-anchor-placement="top-top" href="/ToastedMarshmallow/work.html">Blog</a>
+            <a class='offset-1 col-3 contact purple' data-aos='go-up' data-aos-delay="550" data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
+
+        </div>
+        <div class='offset-4 linksWatcher purpleWatcher'></div>
+        <div class="container-fluid page-red first">
+            <svg class="logo" viewBox="-790 -200 1920 1080" data-aos='go-away' data-aos-delay="550" data-aos-anchor=".second">
+                <defs>
+                    <style>
+                        .a {
+                            fill: #4a3655;
+
+                            opacity: 1;
+                        }
+
+                        .b {
+                            fill: #ede3f2;
+                        }
+
+                        .c {
+                            fill: #f75965;
+
+                        }
+
+                        .d {
+                            fill: #f2b3be;
+                        }
+
+                        .z {
+                            fill: #333;
+                            opacity: 0.3;
+                            transform: translate(0px, 400px) scaleX(1);
+                        }
+                    </style>
+
+                </defs>
+                <filter id="displacementFilter">
+                    <feTurbulence type="turbulence" baseFrequency="0" numOctaves="1" result="turbulence" />
+                    <feDisplacementMap in2="turbulence" in="SourceGraphic" scale="1" xChannelSelector="B"
+                        yChannelSelector="R" />
+                    <!-- onmouseover="randomFlames()" onmouseout="loseFlames()" -->
+                </filter>
+                <g style="z-index: 2">
+                    <!-- <g transform="translate(-787.371 -321.752)"> -->
+                    <path class="a" style="filter: url(#displacementFilter);"
+                        d="M209.91,8.98A64.623,64.623,0,0,0,145.286,73.6c-.066,14.313,3.865,26.8,10.628,36.879.528,1.363,1.178,2.961,2.235,5.381q1.467,2.88,2.64,5.9t2.036,6.13a64.376,64.376,0,0,1,1.414,6.3c1.607,8.147,1.638,15.158,1.668,22.9,0,23.793-20.962,46.05-44.756,46.05-6.17-.017-9.181.119-17.335-5-8.856-5.986-10.843-18.006-10.862-28.52a42.9,42.9,0,0,1,10.582-28.265c-.342-.446-.64-.863-.991-1.317C81,149.263,62.14,163.4,46.178,180.092c-21.622,26.933-32.7,57.436-32.763,91.99a172.33,172.33,0,0,0,344.66,0c0-55.072-30.394-99.818-64.437-136.46-38.777-44.82-75.192-68.247-82.86-88.341a64.4,64.4,0,0,1-2.194-12.714q-.161-2.283-.162-4.572,0-3.232.324-6.451A64.443,64.443,0,0,1,211.309,10.9q.317-.912.661-1.814c-.687-.05-1.374-.083-2.061-.1Z" />
+                    <path class="z" style="filter: url(#displacementFilter);"
+                        d="M210.423,8.98c-35.784,0-64.793,8.692-64.793,19.413-.066,4.3,3.875,8.05,10.656,11.079.529.41,1.181.89,2.241,1.617a25.7,25.7,0,0,1,2.647,1.771,16.572,16.572,0,0,1,2.042,1.841,10.5,10.5,0,0,1,1.418,1.894c1.612,2.447,1.642,4.554,1.673,6.879,0,7.148-21.017,13.834-44.873,13.834a74.432,74.432,0,0,1-17.38-1.5c-8.88-1.8-10.871-5.409-10.891-8.568,0-3.25,4.007-6.218,10.61-8.491-.343-.134-.642-.259-.994-.4A330.467,330.467,0,0,0,46.264,60.383C24.585,68.475,13.476,77.638,13.415,88.018c0,28.591,77.357,51.769,172.781,51.769s172.779-23.178,172.779-51.769c0-16.544-30.474-29.986-64.605-40.994-38.878-13.464-75.388-20.5-83.076-26.538a10.554,10.554,0,0,1-1.42-1.893,7.141,7.141,0,0,1-.78-1.926,5.978,5.978,0,0,1-.162-1.374,6.074,6.074,0,0,1,.325-1.938,7.9,7.9,0,0,1,.967-1.919,11.98,11.98,0,0,1,1.6-1.88q.318-.274.663-.545-1.033-.022-2.067-.031Z" />
+                    <path class="b"
+                        d="M166.679,43.513a21.541,21.541,0,0,1,13.152,4.5A172.33,172.33,0,0,1,230.647,78.4q-7.363,6.892-14.414,14.107c.05.145.1.29.158.433q.42.992.937,1.939t1.124,1.835q.609.888,1.3,1.713a21.246,21.246,0,0,0,3.085,3q.843.669,1.75,1.253a21.477,21.477,0,0,0,3.834,1.951c.234.083.468.159.7.235q7.019-7.322,13.705-14.953a172.326,172.326,0,0,1,29.727,41.621,21.541,21.541,0,0,1,8.355,17.019c-.018.673-.05,1.346-.114,2.016l.033.1-.058.083A21.542,21.542,0,0,1,267.744,168.4a107.706,107.706,0,0,1-64.988-27.327,107.706,107.706,0,0,0,59.267,34.372A452.356,452.356,0,0,1,128.186,293.3c-2.359,1.455-7.082,2.36-10.513.918a172.332,172.332,0,0,1-88.23-87.375c-.9-10.974-.554-12.454,1.58-15.363q2.019-3.213,4.091-6.391h0c40.49-59.246,60.57-78.646,96.877-112.457q3.231-2.792,6.513-5.522a107.706,107.706,0,0,0,34.32,59.059A107.7,107.7,0,0,1,145.5,61.179a21.541,21.541,0,0,1,21.179-17.664Zm28.147,27.655a107.7,107.7,0,0,0,6.1,26.757,172.34,172.34,0,0,0,19.008,24.451,64.628,64.628,0,0,1-7.341-14.846,107.707,107.707,0,0,0,46.36,19.211,107.7,107.7,0,0,1-64.126-55.574Z"
+                        transform="translate(50 120)" />
+                    <path class="c"
+                        d="M89.05,91.1a43.082,43.082,0,0,0,9.23,9.79,452.36,452.36,0,0,1-39.4,41.424q-14.329,13.6-29.8,25.9-.253-.11-.5-.226a21.493,21.493,0,0,1-3.619-2.324q-.844-.669-1.617-1.421t-1.468-1.576q-.695-.823-1.3-1.713-.513-.764-.96-1.57,13.032-15.746,27.446-30.268a452.359,452.359,0,0,1,42-38.022Z"
+                        transform="translate(22 283)" />
+                    <path class="c"
+                        d="M135.288,42.234a373.188,373.188,0,0,1-30.407,40.741q-10.49,12.5-22.043,24.051-.292-.092-.581-.193-.828-.322-1.622-.725a17.77,17.77,0,0,1-1.541-.884q-.747-.48-1.444-1.033t-1.336-1.172q-.637-.619-1.209-1.3t-1.076-1.413q-.5-.733-.927-1.514t-.773-1.6q-.067-.178-.13-.358,11.2-11.965,23.412-22.914a373.19,373.19,0,0,1,39.679-31.686Z"
+                        transform="translate(196 115.232)" />
+                    <path class="d"
+                        d="M199.292,67.329q.018.339.025.678-.01,1.01-.114,2.016l.033.1-.058.083a21.541,21.541,0,0,1-13.035,17.649,107.706,107.706,0,0,1-36.079-8.892A280.03,280.03,0,0,0,199.288,67.33ZM145.56,81.084A107.706,107.706,0,0,0,180.426,94.9,452.362,452.362,0,0,1,53.107,208.489a280.033,280.033,0,0,0,92.453-127.4Z"
+                        transform="translate(130 200)" />
+                </g>
+                <g class="arrow" data-aos='go-away' data-aos-delay="350" data-aos-anchor-placement="top-top">
+                    <line class="arrow-lg" x2="45" y2="40" transform="translate(1.66 1.523)" />
+                    <line class="arrow-lg" x1="47" y2="40" transform="translate(43.66 1.523)" />
+                    <line class="arrow-sm" x2="33" y2="29" transform="translate(0.66 14.523)" />
+                    <line class="arrow-sm" x1="33" y2="29" transform="translate(58.66 14.523)" />
+                </g>
+            </svg>
+            <div class='container-fluid text-center heading purple' data-aos='go-up' data-aos-delay="1000" data-aos-duration="800" data-aos-anchor=".second">Toasted Marshmallow</div>
+        </div>
+        <div class="container-fluid page-red second">
+            <div class='container-fluid text-center textTop' data-aos="fade-up" data-aos-duration="800">Three engineers. One vision.</div>
+            <div class='container offset-2 col-8 text-center textMid' data-aos="fade-up" data-aos-duration="800">Founded in sunny South Africa,
+            Toasted Marshmallow is an innovative hub.
+            We aim to deliver contemporary software and
+            engineering solutions that provide
+            feature-rich user experiences.
+            </div>
+            <div class='offset-5 textWatcher purpleWatcher'></div>
+            <div class='container-fluid text-center textBot' data-aos="fade-up" data-aos-duration="800">Yup, that's cool.
+                What else?
+            </div>
+            <div class='heroTriangleBottomRight' data-aos="go-left" data-aos-duration="1000"></div>
+        </div>
+        <div class='container-fluid page-purple third' style="overflow: hidden">
+            <div class='container-fluid text-center textTop white' data-aos="fade-up" data-aos-duration="800">We want to partner up with
+                you.
+            </div>
+            <div class='container-fluid text-center textMid' data-aos="fade-up" data-aos-duration="800">Do you need..
+            </div>
+            <div class='offset-5 textWatcher redWatcher'></div>
+            <img class='marshStick stick1' src="assets/marshStickLong.png" alt="Marshmallow">
+            <img class='marshStick stick2' src="assets/marshStickLong.png" alt="Marshmallow">
+            <img class='marshStick stick3' src="assets/marshStickLong.png" alt="Marshmallow">
+            <div class='col-12 text-center imgBanner'>
+                <div class='displaySquare offer text-center'>
+                    <a class="typewrite white" data-period="2000" data-type='["Apps", "websites", "designs", "simulations", "PCBs","protoyping", "SEO" ]'></a>
+                    <span class="wrap"></span>
+                </div>
+            </div>
+            <img class='heroImage imageChanger' src="images/1.jpg" alt="Needs">
+            <div class='sub-frosted-glass'></div>
+            <div class='offset-9 col-4 follow row text-left'>
+                <a class='col-12' onclick="contactOpen()">Yes! I need it all</a>
+                <a class='col-12' href="/ToastedMarshmallow/service.html">What else do you do?</a>
+                <a class='col-12' href="/ToastedMarshmallow/us.html">Who are you?</a>
+            </div>
+        </div>
+        <div class='container-fluid foot fourth'>
+            <img src="assets/marshStickLong.png" alt="Footer Image" data-aos='fade-left' data-aos-delay="600">
+            <svg onclick="scrollToTop()" class='toTop' width="93.079" height="45.879">
+                <g transform="translate(92.307 45.878) rotate(-179)">
+                    <line class="back-arrow-sm" x2="45" y2="40" transform="translate(1.66 1.523)" />
+                    <line class="back-arrow-sm" x1="47" y2="40" transform="translate(43.66 1.523)" />
+                    <line class="back-arrow-lg" x2="33" y2="29" transform="translate(0.66 14.523)" />
+                    <line class="back-arrow-lg" x1="33" y2="29" transform="translate(58.66 14.523)" />
+                </g>
+            </svg>
+            <h1 class='toTopText red'>Back to top</h1>
+            <div class='container-fluid row toes'>
+                <div class='col-12 text-right'>Toasted Marshmallow PTY Ltd, Pretoria, RSA</div>
+            </div>
+            <div class='footerLinks container-fluid white'>
+                <div class='row'>
+                    <a href="" class='offset-4 col-1'>Home</a>
+                    <a href="" class='col-1'>Us</a>
+                    <a href="" class='col-1'>Services</a>
+                    <a href="" class='col-1'>Ts and Cs</a>
+                    <a href="" class='col-1'>Contact us</a>
+                </div>
+                <div class="row">
+                    <a href="" class='offset-5 col-1'>Leo</a>
+                    <a href="" class='col-1'>Engineering</a>
+                </div>
+                <div class="row">
+                    <a href="" class='offset-5 col-1'>Tudes</a>
+                    <a href="" class='col-1'>Applications</a>
+                </div>
+                <div class="row">
+                    <a href="" class='offset-5 col-1'>Steve</a>
+                    <a href="" class='col-1'>Web</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Display for smaller screens -->
+    <div class='d-block d-lg-none' style="overflow-x: hidden">
+        <div class='hamburgerMenu'>
+            <img class='hamburgerClose' onclick="closeHamburger()" src="assets/CloseDark.png" alt="Exit">
+            <a class='offset-4 col-7 mobileLink p40' style="left: 6vw" href="index.html">home</a>
+            <a class='offset-4 col-7 mobileLink p45'  style="left: 6vw" href="service.html">services</a>
+            <a class='offset-4 col-7 mobileLink p50'  style="left: 8vw" href="us.html">Us</a>
+            <a class='offset-4 col-7 mobileLink p60 purple'  style="left: 12vw">Contact Us</a>
+        </div>
+        <div class='page-red first'>
+            <h1 class='mobileTitle text-center col-12 purple'>Toasted Marshmallow</h1>
+            <h1 class='mobileSubTitle text-center offset-4 col-8 white'>We don't sell marshmallows.</h1>
+            <svg class='hamburger' onclick="openHamburger()" width="41" height="31">
+                <g transform="translate(-320 -8)">
+                    <rect class="hamburgerMid" width="41" height="5" rx="2.5" transform="translate(320 21)" />
+                    <rect class="hamburgerTop" width="37" height="10" rx="5" transform="translate(324 29)" />
+                    <rect class="hamburgerBottom" width="37" height="10" rx="5" transform="translate(320 8)" />
+                </g>
+            </svg>
+            <img class='container-fluid mobileLogo' src="assets/LogoDark.png" alt="Toasted MarshMallow Logo">
+            <i class="p9095 container-fluid text-center fa fa-chevron-down purple"></i>
+        </div>
+        <div class='page-red second'>
+            <div class='heroTriangleBottomRight'></div>
+            <h1 class='mobileHeader container-fluid text-center purple'>Three engineers <span class='white'>.</span> <br> One vision</h1>
+            <div class='offset-3 p20 watcher whiteWatcher'></div>
+            <p class='offset-1 col-10 mobileBody white text-center'>Founded in sunny
+            South Africa,Toasted
+            Marshmallow is an
+            innovative hub. We aim
+            to deliver contemporary
+            software and engineering
+            solutions that provide
+            feature-rich user
+            experiences.</p>
+            <i class="p9095 container-fluid text-center fa fa-chevron-down white"></i>
+        </div>
+        <div class='page-purple third'>
+            <h1 class='mobileHeader container-fluid text-center white'>We want to partner up with you <span style="color:#f75965">.</span></h1>
+            <div class='offset-3 watcher p20 redWatcher'></div>
+            <h2 class='mobileSubHeader p25 container-fluid text-center white'>Do you need</h2>
+            <img class='imageChanger mobileIndexService p35 container-fluid' src="images/1.jpg" alt="">
+            <div class='offset-4 col-4 p65 redWatcher mobileOffers white text-center'><a class="typewrite white" data-period="2000"
+                data-type='["apps", "websites", "designs", "simulations", "PCBs","protoyping", "SEO" ]'></a>
+            <span class="wrap"></span>
+            </div>
+        <h2 class='container-fluid text-center p7580 mobileText white'>Yes! I need it all</h2>
+        <p class='offset-2 col-10 bar redWatcher p8085'></p>
+        <h2 class='container-fluid text-center p85 mobileText white'>What else do you do?</h2>
+        <p class='offset-2 col-10 bar redWatcher p90'></p>
+        <h2 class='container-fluid text-center p9095 mobileText white'>Who are you?</h2>
+        <p class='offset-2 col-10 bar redWatcher p9510'></p>
+        </div>
+        <div class='foot fourth'></div>
+    </div>
+
+
+
+
+
+    <!-- JavaScript Libraries -->
+    <!-- Swup first,then jQuery, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/swup.js"></script>
+    <script src="js/SwupScriptsPlugin.js"></script>
+
+    <script>
+        //  Swup for smooth page transitions from Swup Library
+                const swup = new Swup({
+                    plugins: [new SwupScriptsPlugin()]
+                });
+                AOS.init();
+                init();
+                document.addEventListener('swup:pageView', init);
+                document.addEventListener('swup:pageView', AOS.init);
+        //Animation for landing page laod
+        var animationMakeOpaque = animeLib({
+            targets: ['.logoImg', '.links', '.contact', '.linksWatcher', '.arrow', '.heading'],
+            duration: 0,
+            opacity: 0,
+        })
+
+        var animationBuildFire = animeLib({
+            targets: ['feTurbulence', 'feDisplacementMap'],
+            duration: 2000,
+            easing: "easeInQuint",
+            scale: 50,
+            baseFrequency: 0.15,
+            delay: 0,
+            opacity: 0,
+            loop: 1,
+            direction: 'reverse',
+        })
+
+        var animationFadeIn = animeLib({
+            targets: ['.logoImg', '.links', '.contact', '.linksWatcher', '.arrow'],
+            duration: 1000,
+            easing: 'easeInSine',
+            opacity: 1,
+            delay: 3000,
+        })
+
+        var animationFadeInToasted = animeLib({
+            targets: ['.heading'],
+            duration: 2000,
+            opacity: 1,
+            easing: 'easeInSine',
+            delay: 1000,
+        })
+
+        var imagesIndex = new Array('images/1.jpg', 'images/2.jpg', 'images/3.jpg', 'images/4.jpg', 'images/5.jpg', 'images/6.jpg', 'images/7.jpg', );
+        var index = 1;
+
+        function rotateImageIndex() {
+            $('.imageChanger').fadeOut('fast', function () {
+                $(this).attr('src', imagesIndex[index]);
+                $(this).fadeIn('fast', function () {
+                    if (index == imagesIndex.length - 1) {
+                        index = 0;
+                    }
+                    else {
+                        index++;
+                    }
+                });
+            });
+        }
+
+        $(document).ready(function () {
+            setInterval(rotateImageIndex, 3600);
+        });
+        </script>
+        
+        
+    </body>
+    </html>
+    

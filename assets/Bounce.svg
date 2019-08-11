@@ -1,0 +1,171 @@
+<svg width="1947.944" height="1037.825" viewBox="0 0 1947.944 1037.825">
+  <path id="Bounce" d="M4876.093,11837.242c68.579,118.782,220.5,276.59,220.5,276.59s104.446,29.013,191.485-21.276,243.708,0,243.708,0,154.736,58.025,170.209,183.748,92.841,181.813,92.841,181.813,116.052,46.42,222.432-34.815,394.575-40.618,431.324,0,104.446,110.249,112.183,274.655,73.5,160.538,73.5,160.538,38.685,21.276,177.946-48.354" transform="translate(-4868.298 -11832.742)" fill="none" stroke="#707070" stroke-width="18"/>
+</svg>
+                var tl = animeLib.timeline({
+                    easing: 'easeInOutCirc',
+                    duration: 70,
+                    loop: true,
+                }, 400);
+
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 50,
+                    translateY: 10,
+                    rotate: '45deg',
+                    easing: 'steps(60)',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 75,
+                    translateY: 15,
+                    rotate: '75deg',
+                    easing: 'easeInSine',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 120,
+                    translateY: 20,
+                    easing: 'steps(60)',
+                    rotate: '100deg',
+                })
+
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 160,
+                    translateY: 25,
+                    easing: 'steps(60)',
+                    rotate: ('120deg'),
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 250,
+                    translateY: 55,
+                    rotate: '155deg',
+                    easing: 'easeOutSine',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 350,
+                    translateY: 100,
+                    easing: 'steps(60)',
+                    rotate: '205deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 450,
+                    translateY: 200,
+                    easing: 'steps(60)',
+                    rotate: '255deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 550,
+                    translateY: 300,
+                    rotate: '295deg',
+                    easing: 'easeInSine',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 625,
+                    translateY: 150,
+                    rotate: '360deg',
+                    easing: 'easeOutSine',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 695,
+                    translateY: 110,
+                    easing: 'easeInSine',
+                    rotate: '390deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 755,
+                    translateY: 100,
+                    easing: 'steps(60)',
+                    rotate: '410deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 805,
+                    translateY: 110,
+                    easing: 'steps(60)',
+                    rotate: '450deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 855,
+                    translateY: 150,
+                    easing: 'steps(60)',
+                    rotate: '500deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 905,
+                    translateY: 200,
+                    easing: 'steps(60)',
+                    rotate: '560deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 955,
+                    translateY: 250,
+                    easing: 'steps(60)',
+                    rotate: '580deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 1015,
+                    translateY: 450,
+                    easing: 'steps(60)',
+                    rotate: '620deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 1055,
+                    translateY: 550,
+                    rotate: '640deg',
+                    easing: 'easeInSine',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 1155,
+                    translateY: 450,
+                    easing: 'easeOutSine',
+                    rotate: '680deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 1200,
+                    translateY: 400,
+                    easing: 'steps(60)',
+                    rotate: '720deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 1300,
+                    translateY: 380,
+                    easing: 'steps(60)',
+                    rotate: '800deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 1350,
+                    translateY: 420,
+                    easing: 'steps(60)',
+                    rotate: '840deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 1450,
+                    translateY: 520,
+                    easing: 'steps(60)',
+                    rotate: '890deg',
+                })
+                tl.add({
+                    targets: '.tumbler',
+                    translateX: 1550,
+                    translateY: 650,
+                    easing: 'steps(60)',
+                    rotate: '950deg',
+                })

@@ -1,0 +1,341 @@
+// Display for mobile screen specific classes
+// Index:
+// 1: Home Page
+
+// _____________1______________
+
+.p5 {
+    top: 5vh !important;
+    position: absolute !important;
+}
+.p10 {
+    top: 10vh !important;
+    position: absolute !important;
+}
+
+.p15 {
+    top: 15vh !important;
+    position: absolute !important;
+}
+
+.p20 {
+    top: 20vh !important;
+    position: absolute !important;
+}
+
+.p25 {
+    top: 25vh !important;
+    position: absolute !important;
+}
+
+.p30 {
+    top: 30vh !important;
+    position: absolute !important;
+}
+
+.p35 {
+    top: 35vh !important;
+    position: absolute !important;
+}
+
+.p40 {
+    top: 40vh !important;
+    position: absolute !important;
+}
+
+.p45 {
+    top: 45vh !important;
+    position: absolute !important;
+}
+
+.p50 {
+    top: 50vh !important;
+    position: absolute !important;
+}
+.p55 {
+    top: 55vh !important;
+    position: absolute !important;
+}
+
+.p60 {
+    top: 60vh !important;
+    position: absolute !important;
+}
+
+.p65 {
+    top: 65vh !important;
+    position: absolute !important;
+}
+
+.p70 {
+    top: 70vh !important;
+    position: absolute !important;
+}
+
+.p75 {
+    top: 75vh !important;
+    position: absolute !important;
+}
+
+.p7580 {
+    top: 77.5vh !important;
+    position: absolute !important;
+}
+
+.p80 {
+    top: 80vh !important;
+    position: absolute !important;
+}
+
+.p8085 {
+    top: 82.5vh !important;
+    position: absolute !important;
+}
+
+.p85 {
+    top: 85vh !important;
+    position: absolute !important;
+}
+
+.p8590 {
+    top: 87.5vh !important;
+    position: absolute !important;
+}
+
+.p90 {
+    top: 90vh !important;
+    position: absolute !important;
+}
+
+.p9095 {
+    top: 92.5vh !important;
+    position: absolute !important;
+}
+
+.p9510 {
+    top: 97.5vh !important;
+    position: absolute !important;
+}
+
+
+
+.mobileTitle {
+    position: absolute;
+    top: 65vh;
+    font-size: 3em;
+}
+
+.mobileSubTitle {
+    font-size: 1em;
+    position: absolute;
+    top: 65vh;
+}
+
+.hamburger {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+    z-index: 8;
+
+    .hamburgerMid {
+        fill: #ede3f2;
+    }
+
+    .hamburgerTop,
+    .hamburgerBottom {
+        fill: #4a3655;
+    }
+}
+
+.mobileLogo {
+    position: absolute;
+    height: auto;
+    z-index: 5;
+    overflow: visible;
+    top: 5vh;
+    transform: scale(0.8);
+}
+
+.mobileHeader {
+    font-size: 2em;
+    top: 5vh;
+    position: absolute;
+}
+
+.bar {
+    height: 2px;
+    position: absolute;
+    top: 20vh;
+}
+
+.mobileBody {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3.3vh;
+    position: absolute;
+    top: 35vh;
+    font-weight: 300;
+    z-index: 1;
+}
+
+
+.mobileSubHeader {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.5em;
+}
+
+.mobileText {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
+}
+
+
+.mobileIndexService {
+
+    height: 40vh;
+    width: 100vw;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-size: contain;
+    background-position: center;
+    border-top: $red solid 5px;
+    border-bottom: $red solid 5px;
+}
+
+.mobileOffers {
+    z-index: 3;
+    height: 5vh;
+    border-radius: 20px;
+    line-height: 5vh;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+}
+
+.hamburgerMenuImg {
+    z-index: 10;
+    position: fixed;
+    left: 100vw;
+    // left: -40vw;
+    top: 40vh;
+}
+
+.hamburgerClose {
+    z-index: 20;
+    position: relative;
+    top: 35vh;
+    left: 40vw;
+    transform: scale(0.4);
+    opacity: 0;
+}
+
+.hamburgerMenu {
+    bottom: -30vh;
+    z-index: 8;
+    height: 100vh;
+    position: absolute;
+    width: 150vw;
+    overflow-x: visible;
+    right: -50vw;
+    opacity: 0;
+    // display: none;
+    background: url('../assets/hamburgerMarsh.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.mobileLink {
+    position: relative;
+    color: $purple;
+    z-index: 12;
+    font-size: 1.4em;
+}
+
+// ______________2_________________
+// ______________Us____________
+
+.usMobile {
+    position: absolute;
+    // display: /block;
+    top: 20vh;
+    left: auto;
+    font-size: 40vh;
+    // text-shadow: .03em .03em 0 $red;
+    z-index: 1;
+
+}
+
+
+.usMobile:after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: 2px;
+    left: 25vw;
+    z-index: -1;
+    text-shadow: none;
+    background-image:
+        linear-gradient(45deg,
+            transparent 45%,
+            $red 45%,
+            $red 55%,
+            transparent 0);
+    background-size: 0.02em 0.02em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shad-anim 300ms linear infinite;
+}
+
+.mobileUsImg {
+    // transform: scale(0.2);
+    // left: 0;
+    position: absolute;
+    z-index: 0;
+    width: 80vw;
+    height: auto;
+    top: 35vh;
+}
+
+.heroTriangleBottomLeftMobile {
+    position: absolute;
+    overflow: visible;
+    right: 0;
+    bottom: 0;
+    // width: 100vw;
+    border-bottom: 800vw solid $red;
+    border-right: 500vw solid transparent;
+}
+
+.mobileCharacterTitle {
+    font-size: 2.5em;
+}
+
+.mobileCharacterSubTitle {
+    font-size: 1.5em;
+}
+
+.mobileCharacters {
+    position: absolute;
+    height: 60vh;
+    width: auto;
+}
+
+.mobileLeo {
+    transform: rotate(49deg);
+    top: -2em;
+    left: 4em;
+}
+
+.mobileTudes{
+    bottom: -12em;
+    right: 5em;
+}
+.mobileSteve{
+    transform: rotate(-10deg);
+    bottom: 5em;
+    right: -1em;
+}
+
+.mobileCharText {
+    font-family: 'Work Sans',sans-serif;
+    font-size: 0.8em;
+}

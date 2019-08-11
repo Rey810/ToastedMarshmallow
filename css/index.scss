@@ -1,0 +1,983 @@
+// #Index Page
+
+// ____________________________________________
+// 1: Linking stylesheets, Importing Fonts//
+// 2: Body and Scrollbar
+// 3: Headings
+// 4: Hero Triangle
+// 5: logo image styling
+// 6: Drop me a message contact
+// 7: Links at top styling and links watcher (moving ball at top)
+// 8: Down arrow
+// 9: Text Content
+
+// ________________1____________________
+
+@import "./variables";
+@import "./animations";
+@import "./mobile";
+
+// @import "./svgstyles";
+
+
+
+@font-face {
+    font-family: 'albaregular';
+    src: url('../fonts/alba____.woff2') format('woff2'),
+    url('../fonts/alba___.woff') format('woff'),
+    url('../fonts/alba___.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'alba_matterregular';
+    src: url('../fonts/albam___.woff2') format('woff2'),
+    url('../fonts/albam___.woff') format('woff'),
+    url('../fonts/albam___.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'alba_superregular';
+    src: url('../fonts/albas___.woff2') format('woff2'),
+    url('../fonts/albas___.woff') format('woff'),
+    url('../fonts/albas___.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+// ________________2____________________
+::-webkit-scrollbar {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+    background: #4a3655;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: $red;
+    margin: 0;
+    padding: 0;
+    font-family: 'albaregular' !important;
+    font-weight:normal;
+    font-style:normal;
+    color: $purple;
+    text-align: center;
+    font-size: 85px;
+    overflow-x: hidden;
+}
+
+// .logoImg ,.links ,.contact ,.linksWatcher ,.arrow, .heading{
+//     opacity: 0;
+// }
+// ________________3____________________
+
+.page-red {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: $red;
+}
+
+.page-purple {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: $purple;
+}
+.page-white {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: $white;
+}
+
+.heading {
+    position: absolute;
+    top: 78vh;
+    left: auto;
+    font-size: 85px;
+}
+
+.us {
+    position: absolute;
+    // display: /block;
+    top: 0vh;
+    left: auto;
+    font-size: 80vh;
+    // text-shadow: .03em .03em 0 $red;
+    z-index: 1;
+    
+}
+
+
+.us:after {
+    content: attr(data-shadow);
+    position: absolute;
+    top: 2px;
+    left: 25vw;
+    z-index: -1;
+    text-shadow: none;
+    background-image:
+        linear-gradient(45deg,
+            transparent 45%,
+            $red 45%,
+            $red 55%,
+            transparent 0);
+    background-size: 0.02em 0.02em;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: shad-anim 300ms linear infinite;
+}
+
+@keyframes shad-anim {
+    0% {
+        background-position: 0 0
+    }
+
+    0% {
+        background-position: 100% -100%
+    }
+}
+.service {
+    position: absolute;
+    top: 28vh;
+    left: 10vw;
+    font-size: 30vh;
+    // z-index: -1;
+}
+
+
+
+.work {
+    position: absolute;
+    top: 58vh;
+    left: auto;
+    font-size: 250px;
+    // z-index: -1;
+}
+
+.first{
+    top: 0vh;
+    position: absolute;
+}
+
+.second {
+    top: 100vh;
+    position: absolute;
+}
+
+.third {
+    top: 200vh;
+    position: absolute;
+}
+
+.fourth {
+    top: 300vh;
+    position: absolute;
+}
+.fifth {
+    top: 400vh;
+    position: absolute;
+}
+.sixth {
+    top: 500vh;
+    position: absolute;
+}
+.seventh{
+    top: 600vh;
+    position: absolute;
+}
+.eighth{
+    top: 700vh;
+    position: absolute;
+}
+.ninth{
+    top: 800vh;
+    position: absolute;
+}
+.middle{
+    right: -100vw;
+    position: absolute;
+    overflow-y: hidden !important;
+    overflow-x: scroll;
+}
+.right{
+    right: -200vw;
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: hidden !important;
+}
+
+// ________________4____________________
+
+.heroTriangleBottomRight {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    // width: 100vw;
+    border-bottom: 100vh solid $purple;
+    border-left: 100vw solid transparent;
+    // filter: brightness(0.8);
+    overflow: visible;
+}
+.heroTriangleBottomLeft {
+    position: absolute;
+    overflow: visible;
+    right: 0;
+    bottom: 0;
+    // width: 100vw;
+    border-bottom: 100vh solid $red;
+    border-right: 100vw solid transparent;
+}
+
+// ________________5____________________
+
+.logoImg{
+    position: fixed;
+    height: 80px;
+    width: auto;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+// ________________6____________________
+
+.contact {
+    font-size: 3vh !important;
+    position: fixed;
+    top: 70px;
+    font-family: 'alba_matterregular';
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        color: $white;
+        text-decoration: none;
+        transform: scale(1.2);
+    }
+}
+
+.red{
+    color: $red !important;
+}
+.alba{
+    font-family: 'albaregular' !important;
+    font-size: 1.1em;
+}
+.purple{
+    color: $purple !important;
+}
+.white{
+    color: $white !important;
+}
+.pink{
+    color: $pink !important;
+}
+.black{
+    color: $black !important;
+}
+
+// ________________7___________________
+.links {
+    top: 70px;
+    font-size: 15px !important;
+    position: fixed;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bolder;
+    z-index: 2;
+    color: $white;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        color: $white;
+        transform: scale(1.2);
+    }
+}
+
+
+.linksWatcher {
+    top: 95px;
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.purpleWatcher {
+    background: $purple !important;
+}
+
+.redWatcher {
+    background: $red !important;
+}
+.pinkWatcher {
+    background: $pink !important;
+}
+.whiteWatcher {
+    background: $white !important;
+}
+
+
+// ________________8___________________
+
+.arrow {
+    fill: none;
+    transform-origin: 50% 50%;
+    z-index: 5;
+    transform: translate(-327px, 430px) scale(0.5);
+    position: fixed;
+}
+.arrow-lg {
+    stroke: #4a3655;
+    stroke-width: 4px;
+}
+.arrow-sm {
+    stroke: $red;
+    stroke-width: 2px;
+    opacity: 1;
+}
+
+// ________________9___________________
+.textHead {
+    font-size: 35px;
+    top: 20%;
+    z-index: 1;
+    font-weight: 700;
+    position: absolute;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.textTop {
+    font-size: 3vh;
+    top: 22%;
+    position: absolute;
+    color: $white;
+    z-index: 2;
+    font-weight: lighter;
+}
+
+.textMid {
+    font-size: 3.8vh;
+    top: 35%;
+    position: absolute;
+    color: $white;
+    font-weight: 500;
+    z-index: 2;
+    font-family: 'Work Sans',
+    sans-serif;
+}
+
+.textBot {
+    font-size: 22px;
+    bottom: 20%;
+    position: absolute;
+    color: $pink;
+    z-index: 2;
+}
+
+
+.textFoot {
+    font-size: 22px;
+    top: 85%;
+    position: absolute !important;
+    color: $pink;
+    z-index: 2;
+}
+
+.watcher{
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.textWatcher,.textWatcherReverse {
+    top: 27%;
+    z-index: 2;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.headWatcher{
+    top: 22% !important;
+}
+.serviceWatcher{
+    top: 15% !important;
+}
+.servicefootWatcher{
+    top: 85% !important;
+}
+
+
+// ________________10___________________
+
+.contactPage{
+    position: fixed;
+    background: $white;
+    // opacity: 0;
+    transform: scaleY(0);
+    left: 10vw;
+    top: 10vh;
+    height: 80vh;
+    z-index: 10;
+    width: 80vw;
+    border-radius: 150px;
+    background: linear-gradient(135deg, rgba(237, 227, 242, 1) 0%, rgba(242, 179, 190, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ede3f2', endColorstr='#f2b3be', GradientType=1);
+    a{
+        left: 0;
+    }
+}
+
+.textTopContact{
+    font-size: 22px;
+    top: 20%;
+    position: absolute;
+    z-index: 1;
+    font-weight: lighter;
+}
+.textMidContact{
+    font-size: 72px;
+    top: 30%;
+    position: absolute !important;
+    z-index: 1;
+    font-weight: lighter;
+    transition: 0.5s ease;
+    text-align: center;
+    &:hover{
+        color: $red !important;
+        text-decoration: none;
+    }
+    cursor: url(../assets/mouse.png), auto !important;
+    // cursor: pointer;
+}
+.textInstructions{
+    font-size: 25px;
+    top: 42%;
+    position: absolute;
+    font-family: 'Work Sans',sans-serif;
+    font-weight: 700;
+    z-index: 1;
+    // display: inline;
+    div{
+        height: 10vh;
+        p{
+            line-height: 8vh;
+            margin-left: 20px;
+        }
+    }
+    img{
+        height: 60px;
+        width: auto;
+    }
+    .marsh1{
+        transform: rotate(39deg);
+    }
+    .marsh2{
+        transform: rotate(99deg);
+    }
+    .marsh3{
+        transform: rotat(159deg);
+    }
+}
+
+.socialIcons{
+    top: 35vh;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    // transform: scale(1);
+    i{
+        transition: 0.3s ease;
+        transform: scale(2.3);
+        cursor: pointer;
+        width: 30px;
+        margin: 20px;
+        
+        &:hover{
+            transform: scale(3);
+        }
+    }
+}
+
+.escape {
+    transform: scale(0.6);
+    left: 4vw;
+    top: 4vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+// ________________11___________________
+
+.marshMallow{
+    height: 80vh;
+    top: 15vh;
+    position: absolute;
+    width: auto;
+}
+
+.marshTitle{
+    top: 25vh;
+    font-size: 20px;
+    position: absolute;
+    letter-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+.marshContent{
+    top: 30vh;
+    font-size: 22px;
+    position: absolute;
+    font-weight: 100;
+    letter-spacing: 2px;
+    // text-shadow: 2px 2px 4px #4A3655;
+}
+
+.nameLine{
+    height: 2px;
+    background: $pink;
+    top: 20vh;
+}
+
+.socialIconsMarsh{
+    // z-index: 3;
+    position: relative;
+    top: 35vh;
+    // height: 2px;
+    i {
+        z-index: 2;
+        height: auto;
+        width: 5px;
+        transform: scale(2.4);
+        transition: 0.3s ease;
+        margin-right: 30px;
+        cursor: pointer;
+        &:hover{
+            transform: scale(3.6);
+        }
+    }
+}
+
+
+// ________________11___________________
+//              Services
+.heroCenterBar {
+    position: absolute !important;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+}
+
+.textTableHeading{
+    top: 20%;
+    position: absolute;
+    font-size: 25px;
+    height: 10%;
+    font-weight: 100;
+}
+.textTableContent{
+    top: 35%;
+    position: absolute;
+    letter-spacing: 2px;
+    font-family: 'Work Sans',sans-serif;
+    font-weight: 700;
+    height: 10%;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.marshStick{
+    right: -270px;
+    bottom: -420px;
+    position: absolute;
+    z-index: 5;
+}
+
+.technicalInfo{
+    font-size: 2.5vh;
+    bottom: 18vh;
+    position: absolute;
+    font-family: 'Work Sans';
+    a{
+        border-radius: 20px;
+        padding: 5px 15px 5px 15px;
+        margin: 10px 5px;
+        font-weight: 700;
+        transition: 0.2s ease-in-out;
+        &:hover{
+            transform: scale(1.1) translateY(-5px);
+            background: white !important;
+            cursor: pointer; 
+            font-weight: 700;
+            color: inherit !important;
+        }
+    }
+}
+
+.lower{
+    bottom: 10vh;
+    position: absolute !important;
+}
+
+
+
+// ________________12___________________
+//                Work
+.project{
+    top: 22%;
+    position: relative;
+    margin-top: 80px;
+    // top: 35%;
+    font-size: 5em;
+    height: 10vh;
+}
+
+.seperator{
+    height:3px;
+    margin-top: 10px;
+    
+}
+
+// ________________13___________________
+//               Footer
+.foot{
+    width: 100vw;
+    height: 30vh !important;
+    background: $purple;
+    overflow: hidden !important;
+    i{
+        transition: 0.3s ease;
+        transform: scale(1.3);
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+
+    img{
+    position: absolute;
+    top: 50px;
+    }
+    
+
+    .footerLinks{
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        // background: $red;
+        height: 2vh;
+        color: $white !important;
+        font-family: 'Work Sans',sans-serif;
+        a{
+            transition: 0.3s ease;
+            color: $white !important;
+            font-size: 15px;
+        }
+    }
+
+    .toes{
+        height: 15px;
+        bottom: 30px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 15px;
+        color: $white;
+        position: absolute;
+
+    }
+
+    .toTop{
+        transform: scale(0.6);
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+    }
+    .toTopText{
+        font-size: 3vh;
+        right: 15px;
+        top: 50px;
+        position: absolute;
+    }
+    .back-arrow-sm {
+        stroke: #ee5f69;
+        stroke-width: 4px;
+    }
+
+    .back-arrow-lg {
+        stroke: #EDE3F2;
+        stroke-width: 2px;
+        opacity: 0.72;
+    }
+}
+
+//_______________14_________________
+//             Mallows
+
+svg{
+    .c{
+        cursor: pointer;
+    }
+}
+
+
+//_______________15_________________
+//             Robot
+
+#robot{
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+}
+
+#web{
+    position: absolute;
+    top: 17vh;
+    right: 5vw;
+    // transform: scale(0.8);
+}
+
+#applications{
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    rect, clipPath, path, rect{
+        overflow: visible !important;
+    }
+    //    transform: scale(0.7);
+}
+
+
+//_______________16_________________
+//             Blurb
+
+.blurb {
+    position: fixed;
+    opacity: 1;
+    transform: scaleY(0);
+    left: 20vw;
+    top: 33vh;
+    height: 36vh;
+    z-index: 7;
+    width: 60vw;
+    border-radius: 100px;
+    transition: 0.2s ease-in;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0 , 0, 0.2);
+}
+
+.blurbBody {
+    border-bottom: none;
+    // filter: blur(100px);
+    opacity: 0.3;
+    position: fixed;
+    top:0;
+    left:0;
+    padding: 0;
+    margin: 0;
+    transform: scaleY(0);
+    height: 100vh;
+    width: 100vw;
+    z-index: 6;
+    background: $black;
+    transition: 0.2s ease-in;
+}
+
+.blurbClose{
+    left: 4vw;
+    top: 4vh;
+    position: absolute;
+    z-index: 8;
+    filter: blur(0px) !important;
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.blurbHead {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    font-size: 4.5vh;
+    margin-top: 50px;
+    border-bottom: 2px solid;
+}
+
+.blurbContent {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3vh;
+    margin-top: 20px;
+}
+
+
+
+//_______________17_________________
+//              US
+
+.displaySquare{
+    width: 20vw;
+    left: 40vw;
+    height: 8vh;
+    margin: 0;
+    // padding: 10px;
+    border: none;
+    background: $red;
+    border-radius: 20px;
+    top: 60vh;
+    // left: 40vw;
+    line-height: 8vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vh;
+    position: absolute;
+    z-index: 5;
+}
+
+.usBGImg{
+    height: auto;
+    position: relative;
+    width: 70vw;
+    z-index: 1;
+    // background: url('../assets/developers.png') !important;
+    overflow: visible;
+    transform: scale(0.8);
+}
+
+.tumbler{
+    z-index: 5;
+    display: block;
+    position: absolute;
+    top: -200px;
+    left: -100px;
+}
+
+.bounce{
+    z-index: 5;
+    position: absolute;
+    top: -200px;
+    display: none;
+    overflow: hidden;
+}
+
+.marshShape{
+    left: 0;
+    top: 0;
+    height: 100vh;
+    border-top-right-radius: 1000%;
+    border-bottom-right-radius: 1000%;
+    width: 60px;
+    position: absolute;
+    z-index: 3;
+}
+
+//_______________18_________________
+//              index
+
+.marshStick{
+    position: absolute;
+    z-index: 3;
+}
+.stick1{
+    left: -1075px;
+    bottom: -227px;
+    transform: rotate(135deg) !important;
+}
+.stick2{
+    left: -1000px;
+    bottom: -200px;
+    transform: rotate(115deg) !important;
+}
+.stick3{
+    left: -900px;
+    bottom: -10px;
+    transform: rotate(125deg) !important;
+}
+
+.imgBanner{
+    top: 45vh;
+    position: absolute;
+    // background: $red;
+    // height: vh;
+    // z-index: 0;
+    // img{
+    //     height: 50vh;
+    //     width: auto;
+    //     border-radius: 50px;
+    // }
+    .offer{
+        position: absolute;
+        left: 42.5vw;
+        z-index: 3;
+        top: 40vh;
+        width: 15vw;
+    }
+}
+
+
+
+.follow{
+    top: 50vh;
+    position: absolute;
+    font-size: 4vh;
+    // background: $red;
+    font-family: 'Work Sans',sans-serif;
+    z-index: 3;
+    a{
+        color: $white !important;
+        border-bottom: 2px solid $red;
+        margin: 10px;
+        transition: 0.2s ease;
+        &:hover{
+            border-bottom: 4px solid $white;
+            text-decoration: none !important;
+            font-weight: 700;
+            cursor: pointer;
+        }
+    }
+}
+
+.heroImage{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 0;
+    height: auto;
+    max-height: 115vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    filter: blur(5px);
+}
+
+
+
+
+.sub-frosted-glass{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    padding: 0;
+    z-index: 1;
+    background: $black;
+    opacity: 0.3;
+    // filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+}

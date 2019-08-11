@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- FontAwesome CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100&display=swap" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <!-- <link rel="manifest" href="icons/site.webmanifest"> -->
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="msapplication-config" content="icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Animate Library -->
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/anime.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/mobile.js"></script>
+    <!-- AOS library -->
+    <link href="css/aos.css" rel="stylesheet">
+    <script src="js/aos.js"></script>
+    <!-- Title -->
+    <title>Us | Toasted Marshmallow</title>
+</head>
+
+<body>
+    <div class="contactPage">
+        <svg onclick="contactClose()" class='escape' width="65.216" height="68.021">
+            <defs>
+                <style>
+                    .e {
+                        stroke: #f75965;
+                    }
+
+                    .x {
+                        stroke: #4a3655;
+                    }
+
+                    .extra {
+                        stroke: #4a3655;
+                        opacity: 0;
+                    }
+                </style>
+            </defs>
+            <g transform="translate(-1738.392 -79.489)">
+                <line class="e" x2="52" y2="57" transform="translate(1745.5 84.5)" />
+                <path class="x" d="M52,0,0,57" transform="translate(1745.5 84.5)" />
+                <line class="extra" x1="52" y2="57" transform="translate(1750.5 89.5)" />
+                <line class="extra" x1="52" y2="57" transform="translate(1739.5 80.5)" />
+            </g>
+        </svg>
+        <div class='col-12 text-center textTopContact black'>Send us a message</div>
+        <a class='col-12 textMidContact black' href="mailto:">info<span
+                style='color:#f75965'>@</span>ToastedMarshmallow.co</a>
+        <div class='col-12 textInstructions text-center purple'>
+            <div class='offset-2 col-8 row'>
+                <img class='marsh1' src="assets/MarshMallow.png" alt="marsh">
+                <p class='text-center'>Let us know who you are</p>
+            </div>
+            <div class='offset-2 col-8 row'>
+                <img class='marsh2' src="assets/MarshMallow.png" alt="marsh">
+                <p>Let us know what you want done</p>
+            </div>
+            <div class='offset-2 col-8 row'>
+                <img class='marsh3' src="assets/MarshMallow.png" alt="marsh">
+                <p>Tells us what you like</p>
+            </div>
+        </div>
+        <div class='col-12 text-center socialIcons'>
+            <i href="" class="col-1 fa fa-at"></i>
+            <i href="" class="col-1 fa fa-linkedin"></i>
+            <i href="" class="col-1 fa fa-github-alt"></i>
+            <i href="" class="col-1 fa fa-instagram"></i>
+        </div>
+    </div>
+    <div class='blurbBody'></div>
+    <div id="swup" class="transition-fade-right d-none d-lg-block">
+        <div class='row text-center fixed-top'>
+
+            <a class='offset-4 col-1 links' data-aos='go-up' data-aos-delay="250" data-aos-anchor-placement="top-top"
+                href="/ToastedMarshmallow/index.html">Home</a>
+            <a class='col-1 links' data-aos='go-up' data-aos-delay="150" data-aos-anchor-placement="top-top"
+                href="/ToastedMarshmallow/us.html">About</a>
+            <a class='col-1 links' data-aos='go-up' data-aos-delay="450" data-aos-anchor-placement="top-top"
+                href="/ToastedMarshmallow/service.html">Service</a>
+            <a class='col-1 links' data-aos='go-up' data-aos-delay="350" data-aos-anchor-placement="top-top"
+                href="/ToastedMarshmallow/work.html">Blog</a>
+            <a class='offset-1 col-3 contact red' data-aos='go-up' data-aos-delay="550"
+                data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
+
+        </div>
+        <img class='logoImg' src="assets/LogoLight.png" alt="company logo" data-aos='go-up' data-aos-delay="250"
+            data-aos-anchor-placement="top-top">
+        <div class='offset-5 linksWatcher redWatcher'></div>
+        <div class="container-fluid page-purple first">
+            <div class='container-fluid text-center us white' data-shadow='Us.'>Us.</div>
+        </div>
+        <div class="container-fluid page-purple second">
+            <div class='container-fluid text-center textTop'>What are we?</div>
+            <div class='container offset-3 col-6 text-center textMid'>Imagine not having a “Q” or a “Mr Wonka” you can
+                contact for creative solutions to your problems. We couldn’t. So we’re
+                that.
+            </div>
+            <div class='displaySquare text-center'>
+                <a class="typewrite white" data-period="2000"
+                    data-type='["Engineers.", "Thinkers...", "{developers}" ]'>
+                    <span class="wrap"></span>
+                </a>
+            </div>
+            <img class='usBGImg imgChangeUs' src="assets/engineers.png" alt="wrench">
+            <div class='offset-5 textWatcher redWatcher'></div>
+            <div class='container-fluid text-center textFoot pink'>Meet the team</div>
+        </div>
+        <div class="container-fluid page-purple third" style="overflow-x: hidden">
+            <div class='heroTriangleBottomLeft'></div>
+            <img class='tumbler' src="assets/MarshMallow.png" alt="Tumbler">
+            <svg class='bounce' width="1923.213" height="1087.324" viewBox="0 0 1923.213 1087.324">
+                <path id="bounce"
+                    d="M0,0c99.5,67.873,140.517,202.818,140.517,202.818s77.037-27.479,163.4,0,158.055,187.689,158.055,187.689,160.516-60.963,249.434,0,171.254,203.361,171.254,203.361,215.205-48.994,286.667,0,147.934,240.559,147.934,240.559,93.467-84.641,242.072-39.125,224.59,284.264,224.59,284.264l135.83-63.879"
+                    fill="none" stroke="none" stroke-width="7" />
+            </svg>
+
+        </div>
+        <div id="leoPage" class="container-fluid page-red fourth" style="overflow-y: hidden">
+            <div class='offset-5 col-5 text-left textHead leoHead'>Leo</div>
+            <div class='offset-5 col-2 nameLine'></div>
+            <div class='container'><img class='marshMallow' src="assets/Leo.png" alt="Leo"></div>
+            <div class='offset-5 col-5 text-left marshTitle purple'>Engineer and Electricity Wizard</div>
+            <div class='offset-5 col-5 text-left marshContent pink'>Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Dolorem dolores similique quas! Modi ab accusantium vitae eum consequuntur sunt odit tempore, <br>
+                <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo repellendus assumenda, ipsam ab
+                consectetur itaque velit consequatur quam magni vel recusandae corporis beatae obcaecati cupiditate
+                voluptate eius odit eum nam.
+            </div>
+            <div class='col-12 text-left socialIconsMarsh purple'>
+                <i href="" class="offset-5 col-1 fa fa-at"></i>
+                <i href="" class="col-1 fa fa-linkedin"></i>
+                <!-- <i href="" class="col-1 fa fa-github-alt"></i> -->
+            </div>
+        </div>
+
+        <div id='tudesPage' class="container-fluid page-purple fourth middle">
+            <div class='offset-1 col-5 text-right textHead tudesHead white'>
+                <p>Tudes</p>
+            </div>
+            <div class='offset-4 col-2 nameLine'></div>
+            <div class='offset-7 container'><img class='marshMallow' src="assets/Tudor.png" alt="Tudes"></div>
+            <div class='offset-1 col-5 text-right marshTitle red'>Creating what I wish had always existed</div>
+            <div class='offset-1 col-5 text-right marshContent pink'>Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Libero totam minima ea, nam perspiciatis reprehenderit quo aspernatur quam officia at voluptatum
+                accusamus est quisquam cupiditate reiciendis adipisci? Minus, voluptatem ipsa.
+                <br>
+                <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum impedit, est vitae ipsa omnis, ad unde
+                repellendus veniam.</div>
+            <div class='col-6 text-right socialIconsMarsh red'>
+                <i href="" class="col-1 fa fa-at"></i>
+                <i href="" class="col-1 fa fa-linkedin"></i>
+                <!-- <i href="" class="col-1 fa fa-github-alt"></i> -->
+            </div>
+            <div class='marshShape redWatcher'></div>
+        </div>
+        <div id='stevePage' class="container-fluid page-red fourth right">
+            <div class='offset-5 col-5 text-left textHead steveHead'>
+                <p>Steve</p>
+            </div>
+            <div class='offset-5 col-2 nameLine'></div>
+            <div class='container'><img class='marshMallow' src="assets/Steve.png" alt="Steve"></div>
+            <div class='offset-5 col-5 text-left marshTitle purple'>Code junky</div>
+            <div class='offset-5 col-5 text-left marshContent pink'>Steve converts space and time to code, plain and
+                simple.
+                Although he's relatively new to being a developer , he knows his way around his text editor.
+                <br>
+                <br>
+                He spends his spare time exploring deeper the universe that is code.</div>
+            <div class='col-12 text-left socialIconsMarsh purple'>
+                <i href="" class="offset-5 col-1 fa fa-at"></i>
+                <i href="" class="col-1 fa fa-linkedin"></i>
+                <i href="" class="col-1 fa fa-github-alt"></i>
+            </div>
+            <div class='marshShape purpleWatcher'></div>
+        </div>
+        <div class='container-fluid foot right fifth'>
+            <img src="assets/marshStickLong.png" alt="Footer Image" data-aos='fade-left' data-aos-delay="600">
+            <svg onclick="scrollToTop()" class='toTop' width="93.079" height="45.879">
+                <g transform="translate(92.307 45.878) rotate(-179)">
+                    <line class="back-arrow-sm" x2="45" y2="40" transform="translate(1.66 1.523)" />
+                    <line class="back-arrow-sm" x1="47" y2="40" transform="translate(43.66 1.523)" />
+                    <line class="back-arrow-lg" x2="33" y2="29" transform="translate(0.66 14.523)" />
+                    <line class="back-arrow-lg" x1="33" y2="29" transform="translate(58.66 14.523)" />
+                </g>
+            </svg>
+            <h1 class='toTopText red'>Back to top</h1>
+            <div class='container-fluid row toes'>
+                <div class='col-12 text-right'>Toasted Marshmallow PTY Ltd, Pretoria, RSA</div>
+            </div>
+            <div class='footerLinks container-fluid white'>
+                <div class='row'>
+                    <a href="" class='offset-4 col-1'>Home</a>
+                    <a href="" class='col-1'>Us</a>
+                    <a href="" class='col-1'>Services</a>
+                    <a href="" class='col-1'>Ts and Cs</a>
+                    <a href="" class='col-1'>Contact us</a>
+                </div>
+                <div class="row">
+                    <a href="" class='offset-5 col-1'>Leo</a>
+                    <a href="" class='col-1'>Engineering</a>
+                </div>
+                <div class="row">
+                    <a href="" class='offset-5 col-1'>Tudes</a>
+                    <a href="" class='col-1'>Applications</a>
+                </div>
+                <div class="row">
+                    <a href="" class='offset-5 col-1'>Steve</a>
+                    <a href="" class='col-1'>Web</a>
+                </div>
+            </div>
+        </div>
+
+        <div class='container-fluid foot right fifth'>
+            <div class='container-fluid text-center footerTitle' data-aos='fade-up' data-aos-delay="200"> Toasted
+                Marshmallow
+            </div>
+            <img src="assets/marshStickLong.png" alt="Footer Image" data-aos='fade-left' data-aos-delay="600">
+            <div class='container-fluid row toes'>
+                <div class='col-6 text-left'>Toasted Marshmallow PTY Ltd, Pretoria, RSA</div>
+                <div class='col-6 text-right'>
+                    <i href="" class="col-1 fa fa-at"></i>
+                    <i href="" class="col-1 fa fa-linkedin"></i>
+                    <i href="" class="col-1 fa fa-github-alt"></i>
+                    <i href="" class="col-1 fa fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Display for smaller screens -->
+    <div class='d-block d-lg-none' style="overflow-x: hidden">
+        <div class='hamburgerMenu'>
+            <img class='hamburgerClose' onclick="closeHamburger()" src="assets/CloseDark.png" alt="Exit">
+            <a class='offset-4 col-7 mobileLink p40' style="left: 6vw" href="index.html">home</a>
+            <a class='offset-4 col-7 mobileLink p45' style="left: 6vw" href="service.html">services</a>
+            <a class='offset-4 col-7 mobileLink p50' style="left: 8vw" href="us.html">Us</a>
+            <a class='offset-4 col-7 mobileLink p60 purple' style="left: 12vw">Contact Us</a>
+        </div>
+
+        <div class='page-purple first'>
+            <svg class='hamburger' onclick="openHamburger()" width="41" height="31">
+                <g transform="translate(-320 -8)">
+                    <rect class="hamburgerMid" width="41" height="5" rx="2.5" transform="translate(320 21)" />
+                    <rect class="hamburgerTop" style="fill:#f75965" width="37" height="10" rx="5"
+                        transform="translate(324 29)" />
+                    <rect class="hamburgerBottom" style="fill:#f75965" width="37" height="10" rx="5"
+                        transform="translate(320 8)" />
+                </g>
+            </svg>
+            <div class='container-fluid text-center usMobile white' data-shadow='Us'>Us</div>
+        </div>
+        <div class='page-purple second'>
+            <h1 class='mobileTitle text-center p10 col-12 white'>Who are we?</h1>
+            <div class='offset-3 p20 watcher redWatcher'></div>
+            <img class='mobileUsImg imgChangeUs' src="assets/engineers.png" alt="Us">
+            <p class='offset-1 col-10 mobileBody white text-center'>
+                Imagine not having a “Q” or a “Mr Wonka” you can contact for creative solutions to your problems. We
+                couldn’t. So we’re
+                that.
+            </p>
+            <div class='offset-4 col-4 p80 redWatcher mobileOffers white text-center'><a class="typewrite white" data-period="2000"
+                    data-type='["engineers","thinkers...","{developers}"]'></a>
+            <span class="wrap"></span>
+            </div>
+        </div>
+        <div class='page-purple third'>
+            <div class='heroTriangleBottomLeftMobile'></div>
+        </div>
+        <div class="page-red fourth">
+            <img class='mobileCharacters mobileLeo' src="assets/Leo.png" alt="Leo">
+            <h1 class='offset-6 col-6 mobileCharacterTitle p30 container-fluid text-center purple'>Leo</h1>
+            <div class='offset-5 p40 watcher purpleWatcher'></div>
+            <p class='offset-2 col-8 p45 white text-center mobileCharacterSubTitle'>Binary Whisperer</p>
+            <p class='offset-1 col-10 p55 white text-center mobileCharText'>
+                Inspired by the things that cannot be taught, Tudor is our beacon. He inspires us all to find creative solutions to
+                problems, always aiming to impress the people using our products. He loves to hear things like “I can’t believe you
+                thought of that”, “I’m really impressed with how easy this is to use” and “that’s exactly what I had in mind”.
+                
+                As for his own skills, Tudor is an electronic engineer. He is
+                proficient in integrated circuit technology, development and product design. He also supplements the mobile development
+                side of Toasted Marshmallow through his abilities in C# and Swift.
+            </p>
+        </div>
+        <div class="page-purple fifth">
+            <img class='mobileCharacters mobileTudes' src="assets/Tudor.png" alt="Tudes">
+            <h1 class='col-12 mobileCharacterTitle p10 container-fluid text-center red'>Tudes</h1>
+            <div class='offset-3 p20 watcher redWatcher'></div>
+            <p class='offset-2 col-8 p25 white text-center mobileCharacterSubTitle'>Electricity Wizard</p>
+            <p class='offset-1 col-10 p35 white text-center mobileCharText'>
+                Inspired by the things that cannot be taught, Tudor is our beacon. He inspires us all to find creative solutions to
+                problems, always aiming to impress the people using our products. He loves to hear things like “I can’t believe you
+                thought of that”, “I’m really impressed with how easy this is to use” and “that’s exactly what I had in mind”.
+                
+                As for his own skills, Tudor is an electronic engineer. He is
+                proficient in integrated circuit technology, development and product design. He also supplements the mobile development
+                side of Toasted Marshmallow through his abilities in C# and Swift.
+            </p>
+        </div>
+        <div class="page-red sixth">
+            <img class='mobileCharacters mobileSteve' src="assets/Steve.png" alt="Steve">
+            <h1 class='offset-6 col-6 mobileCharacterTitle p5 container-fluid text-center purple'>Steve</h1>
+            <div class='offset-6 p15 watcher purpleWatcher'></div>
+            <p class='offset-2 col-8 p20 white text-center mobileCharacterSubTitle'>Code Shifter</p>
+            <p class='offset-1 col-5 p30 white text-center mobileCharText'>
+                The manner in which Steve morphs visions into code is so elegant you'd swear he codes in a tux.
+                His solutions carry with them a dash of flair and a sprinkle of insanity.
+                This guy has become so close with his text editor that he integrates with it telepathically. <br>
+                <br>
+                If you need some coding done, Steve's your guy. Seriously, It's actually a little bit gross how much he enjoys coding.
+            </p>
+        </div>
+    </div>
+    <!-- JavaScript Libraries -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/swup.js"></script>
+    <script src="js/SwupScriptsPlugin.js"></script>
+    <script>
+        // import Swup from 'swup';
+        const swup = new Swup({
+            plugins: [new SwupScriptsPlugin()]
+        });
+        AOS.init();
+        init();
+        document.addEventListener('swup:pageView', init);
+        document.addEventListener('swup:pageView', AOS.init);
+        
+        // Movement of image on us page mobile
+
+            animeLib({
+                targets: ['.mobileUsImg'],
+                duration: 180000,
+                translateX: 150,
+                translateY: 150,
+                loop: true,
+                direction: 'alternate'
+            })
+    </script>
+</body>
+
+</html>
