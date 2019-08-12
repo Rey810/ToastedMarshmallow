@@ -164,9 +164,9 @@ html.is-animating .transition-fade-right {
 
 .mobileLogo {
   position: absolute;
-  height: 30em;
-  width: auto;
-  left: 0;
+  height: auto;
+  width: 100vw;
+  left: 0vw;
   z-index: 5;
   overflow: visible;
   top: 5vh;

@@ -45,6 +45,7 @@ function openHamburger() {
 }
 function closeHamburger() {
             $('body').unbind('touchmove');
+             $('body').removeClass('stop-scrolling')
             animeLib({
                 targets: ['.blurbBody'],
                 duration: 100,
