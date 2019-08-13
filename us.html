@@ -206,12 +206,35 @@
 
     <!-- Display for smaller screens -->
     <div class='d-block d-lg-none' style="overflow-x: hidden !important;">
+        <div class='mobileContact whiteWatcher'>
+            <h1 class='offset-1 col-10 text-center p5 mobileLargeFont purple mobileFootLinks'>Send us a message</h1>
+            <a class='col-12 p15 text-center mobileMedium purple'
+                href="mailto:info@toastedmarshmallow.co?cc=steve.purkis@toastedmarshmallow.co, tudor.wolff@toastedmarshmallow.co,leo.vitale@toastedmarshmallow.co">info<span
+                    class='red'>@</span>toastedmarshmallow.co</a>
+            <div class='container row p25'>
+                <img class='offset-1 mobileContactMallow' src="assets/MarshMallow.png" alt="Mallow">
+                <p class='offset-1 red mobileSmall'>Let us know who you are</p>
+            </div>
+            <div class='container row p30'>
+                <img class='offset-1 mobileContactMallow marsh1' src="assets/MarshMallow.png" alt="Mallow">
+                <p class='offset-1 red mobileSmall'>Let us know what you want</p>
+            </div>
+            <div class='container row p35'>
+                <img class='offset-1 mobileContactMallow' src="assets/MarshMallow.png" alt="Mallow">
+                <p class='offset-1 red mobileSmall'>Tell us about your vision</p>
+            </div>
+            <img onclick="contactMobileClose()" class='mobileExit p45' src="assets/CloseDark.png" alt="">
+            <a class='offset-6 p4550 col-1 red mobileSocials' href="https://www.linkedin.com/company/toasted-marshmallow"><i
+                    href="" class="fa fa-linkedin"></i></a>
+            <a class='p4550 offset-8 col-1 red mobileSocials' href="https://github.com/VoxPolly27/ToastedMarshmallow"><i href=""
+                    class="fa fa-github-alt"></i></a>
+        </div>
         <div class='hamburgerMenu'>
             <img class='hamburgerClose' onclick="closeHamburger()" src="assets/CloseDark.png" alt="Exit">
-            <a class='offset-4 col-7 mobileLink p40' style="left: 6vw" href="index.html">home</a>
-            <a class='offset-4 col-7 mobileLink p45' style="left: 6vw" href="service.html">services</a>
+            <a class='offset-4 col-7 mobileLink p40' style="left: 6vw" href="index.html">Home</a>
+            <a class='offset-4 col-7 mobileLink p45' style="left: 6vw" href="service.html">Services</a>
             <a class='offset-4 col-7 mobileLink p50' style="left: 8vw" href="us.html">Us</a>
-            <a class='offset-4 col-7 mobileLink p60 purple' style="left: 12vw">Contact Us</a>
+            <a onclick="contactMobileOpen()" class='offset-4 col-7 mobileLink p60 purple' style="left: 12vw">Contact Us</a>
         </div>
 
         <div class='page-purple first'>
@@ -293,6 +316,16 @@
                 If you need some coding done, Steve's your guy. Seriously, It's actually a little bit gross how much he
                 enjoys coding.
             </p>
+        </div>
+        <div class='footMobile seventh'>
+            <img class='offset-7 col-5' src="assets/LogoLight.png" alt="LogoLight">
+            <i onclick='scrollToTop()' class="p5 container-fluid text-right fa fa-chevron-up white"></i>
+            <a class='offset-1 col-5 mobileText p5 mobileFootLinks' href="index.html">Home</a>
+            <a class='offset-1 col-5 mobileText p10 mobileFootLinks' href="us.html">Us</a>
+            <a class='offset-1 col-5 mobileText p15 mobileFootLinks' href="service.html">Services</a>
+            <a class='offset-1 col-5 mobileText p20 mobileFootLinks' href="work.html">T's and C's</a>
+            <a class='offset-1 col-5 mobileText p25 mobileFootLinks'>contact</a>
+            <a class='col-12 text-center p35 mobileToe white'>Toasted Marshmallow (Pty) Ltd</a>
         </div>
     </div>
     <!-- JavaScript Libraries -->
@@ -379,9 +412,9 @@
             if ($page == 3) {
                 if (event.originalEvent.deltaY < 0) {
                     // wheeled down
-                    window.scrollBy((-window.innerWidth), window.innerHeight);
+                    window.scrollBy(-window.innerWidth, 0);
 
-                } else {
+                } else if (event.originalEvent.deltaY > 0){
                     window.scrollBy(window.innerWidth, 0);
                 }
 

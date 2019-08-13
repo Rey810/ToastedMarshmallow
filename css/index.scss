@@ -66,6 +66,7 @@ html{
     background: #4a3655;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 body {
     background: $red;
@@ -78,7 +79,7 @@ body {
     color: $purple;
     text-align: center;
     font-size: 85px;
-    overflow-x: hidden !important;
+    // overflow-x: hidden !important;
 }
 
 // .logoImg ,.links ,.contact ,.linksWatcher ,.arrow, .heading{
@@ -513,6 +514,7 @@ body {
         height: 60px;
         width: auto;
     }
+}
     .marsh1{
         transform: rotate(39deg);
     }
@@ -522,7 +524,6 @@ body {
     .marsh3{
         transform: rotat(159deg);
     }
-}
 
 .socialIcons{
     top: 35vh;
@@ -701,6 +702,9 @@ body {
     img{
     position: absolute;
     top: 50px;
+    right: 0;
+    height: auto;
+    width: 90vw;
     }
     
 

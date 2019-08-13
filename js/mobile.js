@@ -5,6 +5,7 @@
 
 function openHamburger() {
             $('body').addClass('stop-scrolling')    
+            $('.hamburgerMenu ').addClass('higher')
             $('body').bind('touchmove', function (e) {
                 e.preventDefault()
             })
@@ -20,7 +21,7 @@ function openHamburger() {
             animeLib({
                 targets: ['.hamburger'],
                 duration: 500,
-                translateX: 150,
+                translateX: 250,
                 easing: 'easeInSine'
             })
 
@@ -45,7 +46,9 @@ function openHamburger() {
 }
 function closeHamburger() {
             $('body').unbind('touchmove');
-             $('body').removeClass('stop-scrolling')
+            $('body').removeClass('stop-scrolling')
+            $('.hamburgerMenu ').removeClass('higher')
+
             animeLib({
                 targets: ['.blurbBody'],
                 duration: 100,
@@ -82,3 +85,25 @@ function closeHamburger() {
             })
 }
 
+function contactMobileOpen(){
+    animeLib({
+        targets: ['.mobileContact'],
+        duration: 300,
+        easing: 'easeInOutSine',
+        scaleY: 1,
+        loop: false,
+        // direction: 'reverse',
+        opacity: 1,
+    })
+}
+function contactMobileClose(){
+    animeLib({
+        targets: ['.mobileContact'],
+        duration: 300,
+        easing: 'easeInOutSine',
+        scaleY: 0,
+        loop: false,
+        // direction: 'reverse',
+        opacity: 0,
+    })
+}

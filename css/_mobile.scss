@@ -51,6 +51,10 @@
     top: 45vh !important;
     position: absolute !important;
 }
+.p4550 {
+    top: 47.5vh !important;
+    position: absolute !important;
+}
 
 .p50 {
     top: 50vh !important;
@@ -154,8 +158,8 @@
 .mobileLogo {
     position: absolute;
     height: auto;
-    width: 100vw;
-    left: 0vw;
+    width: 90vw;
+    left: 5vw;
     z-index: 5;
     overflow: visible;
     top: 5vh;
@@ -237,8 +241,8 @@
 }
 
 .hamburgerMenu {
+    // right: -50vw;
     top: 30vh;
-    z-index: 8;
     height: 100vh;
     position: fixed;
     width: 150vw;
@@ -251,6 +255,9 @@
     background-size: cover;
 }
 
+.higher{
+    z-index: 8;
+}
 .mobileLink {
     position: relative;
     color: $purple;
@@ -390,4 +397,64 @@
     border-radius: 20px;
     padding: 6px 12px;
     width: auto;
+}
+
+.footMobile{
+    height: 40vh;
+    img{
+        top: 5vh;
+        height: auto;
+        // position: absolute;
+    }
+}
+
+.mobileFootLinks{
+    color: $white !important;
+    border-bottom: 1px solid $red;
+}
+
+.mobileToe{
+    font-size: 0.8em
+}
+.mobileMedium{
+    font-size: 1.2em
+}
+.mobileSmall{
+    font-size: 0.9em
+}
+
+// ______________4_________________
+// ____________Contact____________
+
+.mobileLargeFont{
+    font-size: 1.5em;
+}
+.mobileXLFont{
+    font-size: 2em;
+}
+.mobileContact{
+    height: 60vh;
+    width: 90vw;
+    left: 5vw;
+    top: 25vh;
+    border-radius: 50px;
+    z-index: 20;
+    position: fixed;
+    line-height: 3em;
+    transform: scaleY(0);
+    opacity: 0;
+}
+.mobileContactMallow{
+    height: 3em;
+    width: auto;
+}
+
+.mobileExit{
+    transform: scale(0.4);
+}
+
+.mobileSocials{
+    font-size: 2em;
+    margin-left: 10px;
+    margin-right: 10px;
 }
