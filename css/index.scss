@@ -71,13 +71,14 @@ body {
     background: $red;
     margin: 0;
     padding: 0;
+    width: 100vw;
     font-family: 'albaregular' !important;
     font-weight:normal;
     font-style:normal;
     color: $purple;
     text-align: center;
     font-size: 85px;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 // .logoImg ,.links ,.contact ,.linksWatcher ,.arrow, .heading{
@@ -106,6 +107,13 @@ body {
     margin: 0;
     padding: 0;
     background: $white;
+}
+.page-pink {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: #F2B3BE;
 }
 
 .heading {
@@ -170,7 +178,7 @@ body {
     position: absolute;
     top: 58vh;
     left: auto;
-    font-size: 250px;
+    font-size: 9em;
     // z-index: -1;
 }
 
@@ -298,7 +306,7 @@ body {
 
 // ________________7___________________
 .links {
-    top: 70px;
+    top: 10vh;
     font-size: 15px !important;
     position: fixed;
     font-family: 'Work Sans', sans-serif;
@@ -307,13 +315,26 @@ body {
     color: $white;
     transition: 0.3s ease-in-out;
     &:hover {
-        text-decoration: none;
+        border-bottom: 2px solid !important;
         transition: 0.3s ease-in-out;
+        text-decoration: none;
         color: $white;
-        transform: scale(1.2);
+        transform: scale(1.1);  
     }
 }
 
+.menuIndicator{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    z-index: 1;
+    left: 3.5em;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        transform: scale(2);
+        transition: 0.5s ease-in-out;
+    }
+}
 
 .linksWatcher {
     top: 95px;
@@ -549,7 +570,7 @@ body {
 }
 .marshContent{
     top: 30vh;
-    font-size: 22px;
+    font-size: 1.2em;
     position: absolute;
     font-weight: 100;
     letter-spacing: 2px;
@@ -778,8 +799,9 @@ svg{
     opacity: 1;
     transform: scaleY(0);
     left: 20vw;
+    font-weight: 700;
     top: 33vh;
-    height: 36vh;
+    height: auto;
     z-index: 7;
     width: 60vw;
     border-radius: 100px;
@@ -823,7 +845,9 @@ svg{
 .blurbContent {
     font-family: 'Work Sans', sans-serif;
     font-size: 3vh;
+    font-weight: 700;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 

@@ -44,41 +44,58 @@
 </head>
 
 <body>
-    <div class="contactPage">
-        <svg onclick="contactClose()" class='escape' width="65.216" height="68.021">
-            <defs>
-                <style>
-                    .e {
-                        stroke: #f75965;
-                    }
-
-                    .x {
-                        stroke: #4a3655;
-                    }
-
-                    .extra {
-                        stroke: #4a3655;
-                        opacity: 0;
-                    }
-                </style>
-            </defs>
-            <g transform="translate(-1738.392 -79.489)">
-                <line class="e" x2="52" y2="57" transform="translate(1745.5 84.5)" />
-                <path class="x" d="M52,0,0,57" transform="translate(1745.5 84.5)" />
-                <line class="extra" x1="52" y2="57" transform="translate(1750.5 89.5)" />
-                <line class="extra" x1="52" y2="57" transform="translate(1739.5 80.5)" />
-            </g>
-        </svg>
-        <div class='col-12 text-center textTopContact black'>Go on. . .do it</div>
-        <a class='col-12 textMidContact black' href="mailto:">info<span
-                style='color:#f75965'>@</span>ToastedMarshmallow.co</a>
-        <div class='col-12 socialIcons'>
-            <i href="" class="col-1 fa fa-at"></i>
-            <i href="" class="col-1 fa fa-linkedin"></i>
-            <i href="" class="col-1 fa fa-github-alt"></i>
-            <i href="" class="col-1 fa fa-instagram"></i>
+        <div class="contactPage">
+            <svg onclick="contactClose()" class='escape' width="65.216" height="68.021">
+                <defs>
+                    <style>
+                        .e {
+                            stroke: #f75965 !important;
+                        }
+        
+                        .x {
+                            stroke: #4a3655 !important;
+                        }
+        
+                        .extra {
+                            stroke: #4a3655 !important;
+                            opacity: 1;
+                        }
+                    </style>
+                </defs>
+                <g transform="translate(-1738.392 -79.489)">
+                    <line class="e" x2="52" y2="57" transform="translate(1745.5 84.5)" />
+                    <path class="x" d="M52,0,0,57" transform="translate(1745.5 84.5)" />
+                    <line class="extra" x1="52" y2="57" transform="translate(1750.5 89.5)" />
+                    <line class="extra" x1="52" y2="57" transform="translate(1739.5 80.5)" />
+                </g>
+            </svg>
+            <div class='col-12 text-center textTopContact black'>Send us a message</div>
+            <a class='col-12 textMidContact black'
+                href="mailto:info@toastedmarshmallow.co?cc=steve.purkis@toastedmarshmallow.co, tudor.wolff@toastedmarshmallow.co,leo.vitale@toastedmarshmallow.co">info<span
+                    style='color:#f75965'>@</span>ToastedMarshmallow.co</a>
+            <div class='col-12 textInstructions text-center purple'>
+                <div class='offset-2 col-8 row'>
+                    <img class='marsh1' src="assets/MarshMallow.png" alt="marsh">
+                    <p class='text-center'>Let us know who you are</p>
+                </div>
+                <div class='offset-2 col-8 row'>
+                    <img class='marsh2' src="assets/MarshMallow.png" alt="marsh">
+                    <p>Let us know what you want done</p>
+                </div>
+                <div class='offset-2 col-8 row'>
+                    <img class='marsh3' src="assets/MarshMallow.png" alt="marsh">
+                    <p>Tells us what you like</p>
+                </div>
+            </div>
+            <div class='col-12 text-center socialIcons'>
+                <!-- <a class='col-1 red' href=""><i href="" class="fa fa-at"></i></a> -->
+                <a class='col-1 purple' href="https://www.linkedin.com/company/toasted-marshmallow"><i href=""
+                        class="fa fa-linkedin"></i></a>
+                <a class='col-1 purple' href="https://github.com/VoxPolly27/ToastedMarshmallow"><i href=""
+                        class="fa fa-github-alt"></i></a>
+                <!-- <a class='col-1 red' href=""><i href="" class="fa fa-instagram"></i></a> -->
+            </div>
         </div>
-    </div>
     <div id="swup" class="transition-fade-right d-none d-lg-block">
         <img class='logoImg' src="assets/LogoDark.png" alt="company logo">
         <div class='row text-center fixed-top'>
@@ -87,15 +104,14 @@
                 data-aos-anchor-placement="top-top" href="./index.html">Home</a>
             <a class='col-1 links purple' data-aos='go-up' data-aos-delay="150" data-aos-anchor-placement="top-top"
                 href="./us.html">About</a>
-            <a class='col-1 links purple' data-aos='go-up' data-aos-delay="450" data-aos-anchor-placement="top-top"
+            <a style='border-top: 2px solid #4A3655' class='col-1 links purple' data-aos='go-up' data-aos-delay="450" data-aos-anchor-placement="top-top"
                 href="./service.html">Service</a>
             <a class='col-1 links purple' data-aos='go-up' data-aos-delay="350" data-aos-anchor-placement="top-top"
-                href="./work.html">Blog</a>
+                href="./work.html">Ts & Cs</a>
             <a class='offset-1 col-3 contact purple' data-aos='go-up' data-aos-delay="550"
                 data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
 
         </div>
-        <div class='offset-6 linksWatcher redWatcher'></div>
         <div class="container-fluid page-white first">
             <p class='textFoot offset-4 text-center red'>Things we do</p>
             <svg viewBox="-550 -200 1920 1080">
@@ -150,15 +166,13 @@
             </div>
             <div class='blurbBody'>
             </div>
-            <div class='offset-7 container row technicalInfo purple'>
-                <a class='purpleWatcher white technicals'>consulting</a>
+            <div class='offset-8 container row technicalInfo purple'>
                 <a class='purpleWatcher white technicals'>diagrams</a>
                 <a class='purpleWatcher white technicals'>plc</a>
                 <a class='purpleWatcher white technicals'>design</a>
             </div>
-            <div class='offset-6 container row technicalInfo lower purple'>
-                <a class='purpleWatcher white technicals'>simulation</a>
-                <a class='purpleWatcher white technicals'>pcb</a>
+            <div class='offset-7 container row technicalInfo lower purple'>
+                <a class='purpleWatcher white technicals'>electrical simulations</a>
                 <a class='purpleWatcher white technicals'>documents</a>
             </div>
 
@@ -182,13 +196,12 @@
                 <div class='offset-1 container row technicalInfo red'>
                     <a class='redWatcher white technicals'>wireframes</a>
                     <a class='redWatcher white technicals'>data visualisation</a>
-                    <a class='redWatcher white technicals'>development</a>
+                    <a class='redWatcher white technicals'>deployment</a>
                 </div>
                 <div class='offset-2 container row technicalInfo lower red'>
                     <a class='redWatcher white technicals'>branding</a>
-                    <a class='redWatcher white technicals'>SEO</a>
                     <a class='redWatcher white technicals'>animations</a>
-                    <a class='redWatcher white technicals'>responsive</a>
+                    <a class='redWatcher white technicals'>responsive design</a>
                 </div>
         </div>
         <div id="appsPage" class='container-fluid page-white fourth'>
@@ -207,16 +220,13 @@
                 along the way.
             </p>
             <div class='offset-3 container row technicalInfo pink'>
-                <a class='pinkWatcher white technicals'>UI design</a>
-                <a class='pinkWatcher white technicals'>android</a>
-                <a class='pinkWatcher white technicals'>iOS</a>
-                <a class='pinkWatcher white technicals'>windows</a>
+                <a class='pinkWatcher white technicals'>mobile</a>
                 <a class='pinkWatcher white technicals'>databases</a>
             </div>
-            <div class='offset-5 container row technicalInfo lower pink'>
-                <a class='pinkWatcher white technicals'>deployment</a>
-                <a class='pinkWatcher white technicals'>device integration</a>
-                <a class='pinkWatcher white technicals'>cloud</a>
+            <div class='offset-4 container row technicalInfo lower pink'>
+                <a class='pinkWatcher white technicals'>desktop</a>
+                <a class='pinkWatcher white technicals'>UI/UX</a>
+                <a class='pinkWatcher white technicals'>hardware integration</a>
             </div>
         </div>
         <div class='container-fluid foot fifth'>
@@ -285,7 +295,7 @@
         <div class='page-white second'>
             <h1 class='col-12 text-center p5 purple'>Engineering</h1>
             <div class='offset-3 p15 watcher redWatcher'></div>
-            <img class='p20 container-fluid mobileSVG' src="svg/robot.svg" alt="robot">
+            <img class='p20 container-fluid mobileSVG' onload="SVGInject(this)" src="svg/robot.svg" alt="robot">
             <p class='offset-2 col-8 text-center purple mobileText p60'>
             Building a robot? Hate
             doing technical documents?
@@ -293,11 +303,21 @@
             We’re all engineers too.
             Have a look at what we
             can do for you.</p>
+                    <div class='container-fluid p85'>
+                        <a class='offset-1 text-center purpleWatcher white mobileBlurb'>design</a>
+                        <a class='text-center purpleWatcher white mobileBlurb'>diagrams</a>
+                        <a class='text-center purpleWatcher white mobileBlurb'>documents</a>
+                    </div>
+                    <div class='container-fluid p90'>
+                        <a class='offset-2 text-center purpleWatcher white mobileBlurb'>plc</a>
+                        <a class='text-center purpleWatcher white mobileBlurb'>electrical simulation</a>
+                    </div>
         </div>
+
         <div class='page-white third'>
             <h1 class='col-12 text-center p5 purple'>Apps</h1>
             <div class='offset-3 p15 watcher redWatcher'></div>
-            <img class='p20 container-fluid mobileSVG' src="svg/applications.svg" alt="web">
+            <img class='p20 container-fluid mobileSVG' onload="SVGInject(this)" src="svg/applications.svg" alt="web">
             <p class='offset-1 col-10 text-center purple mobileText p55'>
             “I’ve got this great app
             idea”
@@ -308,11 +328,20 @@
             app deployment, we’ll help
             you take the steps along
             the way.</p>
+            <div class='container-fluid p85'>
+                <a class='offset-2 text-center redWatcher mobileBlurb'>UI/UX</a>
+                <a class='text-center redWatcher mobileBlurb'>hardware integration</a>
+            </div>
+            <div class='container-fluid p90'>
+                    <a class='text-center redWatcher mobileBlurb'>mobile</a>
+                    <a class='text-center redWatcher mobileBlurb'>desktop</a>
+                    <a class='text-center redWatcher mobileBlurb'>databases</a>
+            </div>
         </div>
         <div class='page-white fourth'>
             <h1 class='col-12 text-center p5 purple'>Development</h1>
             <div class='offset-3 p15 watcher redWatcher'></div>
-            <img class='p20 container-fluid mobileSVG' src="svg/web.svg" alt="apps">
+            <img class='p20 container-fluid mobileSVG' onload="SVGInject(this)" src="svg/web.svg" alt="apps">
             <p class='offset-1 col-10 text-center purple mobileText p55'>
             We love building websites.
             To us, your webpage is
@@ -325,7 +354,16 @@
             People will remember
             the page, and isn’t that
             the entire point?
-</p>
+            </p>
+                                <div class='container-fluid p85'>
+                                    <a class='offset-1 text-center pinkWatcher purple mobileBlurb'>design</a>
+                                    <a class='text-center pinkWatcher purple mobileBlurb'>diagrams</a>
+                                    <a class='text-center pinkWatcher purple mobileBlurb'>documents</a>
+                                </div>
+                                <div class='container-fluid p90'>
+                                    <a class='offset-2 text-center pinkWatcher purple mobileBlurb'>plc</a>
+                                    <a class='text-center pinkWatcher purple mobileBlurb'>electrical simulation</a>
+                                </div>
         </div>
     </div>
     <!-- JavaScript Libraries -->

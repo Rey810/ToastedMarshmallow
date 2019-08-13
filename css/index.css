@@ -24,6 +24,11 @@ html.is-animating .transition-fade-right {
   position: absolute !important;
 }
 
+.p0510 {
+  top: 7.5vh !important;
+  position: absolute !important;
+}
+
 .p10 {
   top: 10vh !important;
   position: absolute !important;
@@ -181,9 +186,8 @@ html.is-animating .transition-fade-right {
 }
 
 .bar {
-  height: 2px;
-  position: absolute;
-  top: 20vh;
+  height: 5px;
+  z-index: 2;
 }
 
 .mobileBody {
@@ -202,7 +206,7 @@ html.is-animating .transition-fade-right {
 
 .mobileText {
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: 700;
 }
 
@@ -220,11 +224,13 @@ html.is-animating .transition-fade-right {
 .mobileOffers {
   z-index: 3;
   height: 5vh;
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   line-height: 5vh;
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
   font-size: 1.2em;
+  padding: 5px;
 }
 
 .hamburgerMenuImg {
@@ -376,6 +382,17 @@ html.is-animating .transition-fade-right {
   height: 35vh;
 }
 
+.mobileBlurb {
+  height: 25px;
+  line-height: 15px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 6px 20px;
+  width: auto;
+}
+
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
@@ -419,13 +436,14 @@ body {
   background: #F75965;
   margin: 0;
   padding: 0;
+  width: 100vw;
   font-family: 'albaregular' !important;
   font-weight: normal;
   font-style: normal;
   color: #4A3655;
   text-align: center;
   font-size: 85px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .page-red {
@@ -450,6 +468,14 @@ body {
   margin: 0;
   padding: 0;
   background: #EDE3F2;
+}
+
+.page-pink {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: #F2B3BE;
 }
 
 .heading {
@@ -511,7 +537,7 @@ body {
   position: absolute;
   top: 58vh;
   left: auto;
-  font-size: 250px;
+  font-size: 9em;
 }
 
 .first {
@@ -644,7 +670,7 @@ body {
 }
 
 .links {
-  top: 70px;
+  top: 10vh;
   font-size: 15px !important;
   position: fixed;
   font-family: 'Work Sans', sans-serif;
@@ -656,12 +682,30 @@ body {
 }
 
 .links:hover {
-  text-decoration: none;
+  border-bottom: 2px solid !important;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  text-decoration: none;
   color: #EDE3F2;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.menuIndicator {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  z-index: 1;
+  left: 3.5em;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.menuIndicator:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .linksWatcher {
@@ -914,7 +958,7 @@ body {
 
 .marshContent {
   top: 30vh;
-  font-size: 22px;
+  font-size: 1.2em;
   position: absolute;
   font-weight: 100;
   letter-spacing: 2px;
@@ -1133,8 +1177,9 @@ svg .c {
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   left: 20vw;
+  font-weight: 700;
   top: 33vh;
-  height: 36vh;
+  height: auto;
   z-index: 7;
   width: 60vw;
   border-radius: 100px;
@@ -1183,7 +1228,9 @@ svg .c {
 .blurbContent {
   font-family: 'Work Sans', sans-serif;
   font-size: 3vh;
+  font-weight: 700;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .displaySquare {

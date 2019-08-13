@@ -11,28 +11,22 @@ function init(){
         
         // Content for blurbs on service page
         var blurbs = {
-            consulting: "Professional engineering design, complete simulations and system analysis.Reporting on findings in a structured manner.",
-            diagrams: "Diagrams Text",
-            plc: "",
-            design: "",
-            simulation: "",
-            pcb: "",
-            documents: "",
+            diagrams: "Our engineers always create professional content when executing a project or delivering a service. These include electrical diagrams, activity diagrams, state machine diagrams, use-case diagrams and class descriptions along with many other applicable engineering documents. ",
+            plc: "With our experience in machine and system design, we are entirely at ease with IEC 61131-3 machine-layer development. Our engineers are trained and proficient in integrated development environments such as TIA Portal, Codesys and many others.",
+            design: "Our engineering team employs a meticulous approach to designing robust and reliable systems. Allow us to walk you through the design process of bringing your ideas to life. ",
+            electrical_simulations: "We don’t ever build a device without understanding exactly how it will perform. Neither should you. Our engineers are trained to provide detailed thermal and electronic simulations for any projects they are working on",
+            documents: "The worst part of engineering for any engineer is writing the user manual. However, the first thing you (should) do when you buy any product/service is read the user manual. Our team can execute this work for you in a professionally aesthetic manner.",
             wireframes: "Every decent website starts as a wireframe. We can turn your wireframes into a tangible site. Or we can whip up a wireframe for you.",
-            data_visualisation: "People just love graphs, tables, and charts. But what's even better than that is data visualised in unique and interesting ways. Right?",
-            development: "Websites, apps, software. You name it. We just love developing. Lets get that gem of an idea of yours into the virtual world!",       
-            branding: "Branding pretty much dictates the way people see your business or company. We can help you make your brand memorable and unique. Inspired by you.",
-            SEO: "We bet that 9 times out of 10 you don't look at the second page of search results. That's why SEO is so important. We can help you get your website to page one of Google.",
-            animations: "Did someone say SVG? Oh boy are animations fun to do. We use all kinds of animating libraries to bring your web page to life.",
-            responsive: "Chances are that most of the traffic on your website will be coming through mobile devices. These days, having a mobile friendly website is really important. That's why we design responsive websites",
-            UI_design: "We love clean, intuitive interfaces. We design our UIs for an enjoyable user experience",
-            android: "Yes, we can do android apps. You got an idea?",
-            iOS: "We do iOS apps too. What's your vision?",
-            windows: "We",
-            databases: "",
-            deployment: "",
-            device_integration: "",
-            cloud: ""     
+            data_visualisation: "Your data adds value to your company. We believe that displaying this data in a visually appealing manner can assist you in growing your brand. Our team has the toolbox to easily implement beautiful data visualisations on your websites. ",
+            branding: "Our web developers love tackling an aesthetic challenge. They’re so good that they can actually put together a very compelling theme and feel for your website. So if you want us to do your branding, we can.",
+            animations: "We have seen that purely illustrating a concept through a short animation is very effective on a webpage. These animations ease the understanding of your products and turns potential clients into buying customers. We can offer these animations to further enhance your webpages.",
+            responsive_design: "A web page needs to support many device sizes (phone, tablet, PC, etc.) and needs to look good doing so. Our web developers get that and they use complex media queries and web-specific design techniques to ensure that your website never looks tawdry. ",
+            deployment: "Deployment is not just setting up the hosting and domains. We also implement a lot of backend code and security measures. Not to mention all of the search engine optimization (SEO) we can do for you.",
+            UIUX: "We love clean, intuitive interfaces. We design our UIs for an enjoyable user experience",
+            mobile: "To provide cross-platform applications our team utilises the Microsoft Xamarin platform. This gives our mobile applications a native and natural experience for either Android or iOS.",
+            desktop: "Desktop OS’s are not going out of fashion. Sometimes you need a PC application and we get that. We are capable of developing Windows applications using the newer .NET CORE techniques as well as the trusted .NET libraries. ",
+            databases: "Data stores used to be limited to relational databases (RDB). We can do that, but that’s not all. We can also help you realise your goals using modern data stores such as graph stores, document stores and many others.",
+            hardware_integration: "Sometimes applications require a significant hardware component. Maybe it’s a system that needs to communicate with a PC, or perhaps just a smart home device. Our engineers effectively bridge the gap between abstract software and actual hardware.",
         }
 
         
@@ -43,7 +37,7 @@ function init(){
         $(".technicalInfo a").each( function(){
             this.addEventListener('click', function (event) {
                 var searchTerm = $(this).html().toString();
-                var searchTermStrip = searchTerm.replace(' ','_');
+                var searchTermStrip = searchTerm.replace(' ', '_').replace('/', '');
                 console.log(searchTerm);
                 console.log(searchTermStrip);
                 $('.blurb').css('background', $(this).css("color"));
@@ -174,107 +168,29 @@ var animationWatcher = animeLib({
 })
 
 
-
-
-
-
-
-
-// document.addEventListener('swup:contentReplaced', init);
-
-
-// Us page animations
 // Function for smooth scroll
-if (document.querySelector('.us')) { 
-    var myPath = animeLib.path('.bounce path');
-
-    animeLib({
-        targets: '.tumbler',
-        translateX: myPath('x'),
-        translateY: myPath('y'),
-        rotate: '1500deg',
-        easing: 'linear',
-        duration: 3000,
-        // scale: (3),
-        loop: true,
-    });
-
-    // Function for image changes
-
-    var images = new Array('./assets/engineers.png', './assets/thinkers.png', './assets/developers.png');
-    var index = 1;
-
-    function rotateImage() {
-        $('.imgChangeUs').fadeOut('fast', function () {
-            $(this).attr('src', images[index]);
-
-            $(this).fadeIn('fast', function () {
-                if (index == images.length - 1) {
-                    index = 0;
-                }
-                else {
-                    index++;
-                }
-            });
-        });
-    }
-
-    $(document).ready(function () {
-        setInterval(rotateImage, 5000);
-    });
-
-    animeLib({
-        targets: ['.usBGImg'],
-        duration: 100000,
-        translateX: 300,
-        translateY: -150,
-        loop: true,
-        direction: 'alternate'
-    })
-
-    
-    // window.onwheel = preventDefault;
-    $(window).on('wheel', function (event) {
-        // console.log(window.scrollY);
-        var $page = Math.floor(window.scrollY / window.innerHeight);
-        
-        if ($page == 3) {
-            var $horizontalPage = (Math.floor(window.scrollX / window.innerWidth));
-            if (event.originalEvent.deltaY > 0) {
-                // wheeled down
-                console.log($horizontalPage);
-                $('html').animate({
-                    scrollLeft: ($horizontalPage+1) * window.innerWidth,
-
-                }, { easing: "swing", duration: 5 })
-            } else {
-                $('html').animate({
-                    scrollLeft: ($horizontalPage-1) * window.innerWidth
-                }, { easing: "swing", duration: 5 })
-            }
-
-        }
-    })} else {
 $(window).on('wheel', function (event) {
     // console.log(window.scrollY);
     var $page = Math.floor(window.scrollY / window.innerHeight);
     // console.log($page);
     if (event.originalEvent.deltaY < 0) {
         // wheeled up
-        $('html').animate({
-            scrollTop: ($page-1) * window.innerHeight,
-            scrollLeft: 0
-        }, { easing: "swing", duration: 5 })
+        window.scrollBy(0, -window.innerHeight);
+        // $('html').animate({
+        //     scrollTop: ($page-1) * window.innerHeight,
+        //     scrollLeft: 0
+        // }, { easing: "swing", duration: 5 })
     }
     else {
         // wheeled down
-        $('html').animate({
-            scrollTop: ($page+1) * window.innerHeight,
-            scrollLeft: 0
-        }, { easing: "swing", duration: 40 })
+        window.scrollBy(0, window.innerHeight);
+        // $('html').animate({
+        //     scrollTop: ($page+1) * window.innerHeight,
+        //     scrollLeft: 0
+        // }, { easing: "swing", duration: 40 })
     }
 })
-}
+
  // function for text typeWriter
  var TxtType = function (el, toRotate, period) {
      this.toRotate = toRotate;

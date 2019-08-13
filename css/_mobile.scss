@@ -8,6 +8,10 @@
     top: 5vh !important;
     position: absolute !important;
 }
+.p0510 {
+    top: 7.5vh !important;
+    position: absolute !important;
+}
 .p10 {
     top: 10vh !important;
     position: absolute !important;
@@ -165,9 +169,8 @@
 }
 
 .bar {
-    height: 2px;
-    position: absolute;
-    top: 20vh;
+    height: 5px;
+    z-index: 2;
 }
 
 .mobileBody {
@@ -187,7 +190,7 @@
 
 .mobileText {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 700;
 }
 
@@ -207,11 +210,13 @@
 .mobileOffers {
     z-index: 3;
     height: 5vh;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     line-height: 5vh;
     font-family: 'Work Sans', sans-serif;
     font-weight: 700;
     font-size: 1.2em;
+    padding: 5px;
 }
 
 .hamburgerMenuImg {
@@ -374,4 +379,15 @@
 .mobileSVG{
     width: auto;
     height: 35vh;
+}
+
+.mobileBlurb{
+    height: 25px;
+    line-height: 15px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    border-radius: 20px;
+    padding: 6px 20px;
+    width: auto;
 }
