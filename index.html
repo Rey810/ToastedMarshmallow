@@ -30,7 +30,6 @@
     <script src="js/anime.min.js"></script>
     <!-- Functions for ToastedMarshmallow site -->
     <script src="js/animations.js"></script>
-    <script src="js/mobile.js"></script>
     <!-- AOS library -->
     <link href="css/aos.css" rel="stylesheet">
     <script src="js/aos.js"></script>
@@ -249,7 +248,7 @@
 
     </div>
     <!-- Display for smaller screens -->
-    <div class='d-block d-lg-none' style="overflow-x: hidden">
+    <div class='d-block d-lg-none' style="overflow: scroll; -webkit-overflow-scrolling: touch;">
         <div class='mobileContact whiteWatcher'>
             <h1 class='offset-1 col-10 text-center p5 mobileLargeFont purple mobileFootLinks'>Send us a message</h1>
             <a class='col-12 p15 text-center mobileMedium purple' href="mailto:info@toastedmarshmallow.co?cc=steve.purkis@toastedmarshmallow.co, tudor.wolff@toastedmarshmallow.co,leo.vitale@toastedmarshmallow.co">info<span class='red'>@</span>toastedmarshmallow.co</a>
@@ -310,11 +309,11 @@
             <h1 class='mobileHeader container-fluid text-center white'>We want to partner up with you</h1>
             <h2 class='mobileSubHeader p20 container-fluid text-center white'>Do you need</h2>
             <img class='imageChanger mobileIndexService p35 container-fluid' src="images/1.jpg" alt="">
-            <div class='offset-4 col-4 p30 redWatcher mobileOffers white text-center'><a class="typewrite white" data-period="2000"
+            <div style="border-top-left-radius: 20px; border-top-right-radius: 20px;"class='offset-4 col-4 p30 redWatcher mobileOffers white text-center'><a class="typewrite white" data-period="2000"
                 data-type='["apps", "websites", "designs", "simulations", "PCBs","protoyping", "SEO" ]'></a>
             <span class="wrap"></span>
             </div>
-        <h2 class='container-fluid text-center p7580 mobileText white'>Yes! I need it all</h2>
+        <h2 onclick="contactMobileOpen()" class='container-fluid text-center p7580 mobileText white'>Yes! I need it all</h2>
         <p class='offset-2 col-10 bar redWatcher p8085'></p>
         <h2 class='container-fluid text-center p85 mobileText white'>What else do you do?</h2>
         <p class='offset-2 col-10 bar redWatcher p90'></p>
@@ -344,7 +343,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="js/swup.js"></script>
     <script src="js/SwupScriptsPlugin.js"></script>
-
+    <!-- mobile js props -->
+    <script src="js/mobile.js"></script>
     <script>
         //  Swup for smooth page transitions from Swup Library
                 const swup = new Swup({
@@ -409,6 +409,17 @@
         $(document).ready(function () {
             setInterval(rotateImageIndex, 3600);
         });
+
+        // if (document.querySelector('.mobileContact')) {
+        //         $("html").css({
+        //             'overflow': 'visible',
+        //         })
+        //     } else {
+        //             $("html").css({
+        //                 'overflow': 'visible',
+        //             })
+
+        //    }
         </script>
         
         

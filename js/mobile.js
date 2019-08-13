@@ -107,3 +107,12 @@ function contactMobileClose(){
         opacity: 0,
     })
 }
+if (document.querySelector('.mobileContact')) {
+    $("html").css({
+        'overflow': 'visible',
+    })
+} else {
+    $("html").css({
+        'overflow': 'hidden',
+    })
+}

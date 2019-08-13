@@ -229,8 +229,6 @@ html.is-animating .transition-fade-right {
 .mobileOffers {
   z-index: 3;
   height: 5vh;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   line-height: 5vh;
   font-family: 'Work Sans', sans-serif;
   font-weight: 700;
@@ -466,7 +464,7 @@ html.is-animating .transition-fade-right {
 }
 
 .stop-scrolling {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -503,6 +501,7 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -516,6 +515,7 @@ body {
   color: #4A3655;
   text-align: center;
   font-size: 85px;
+  overflow-x: hidden !important;
 }
 
 .page-red {
