@@ -88,32 +88,32 @@
     </div>
     <div class='blurbBody'></div>
     <div id="swup" class="transition-fade-right d-none d-lg-block">
-        <div class='row text-center fixed-top'>
+        <div class='col-12 row text-center fixed-top p10' style="position: fixed !important">
 
             <a class='offset-4 col-1 links' data-aos='go-up' data-aos-delay="250" data-aos-anchor-placement="top-top"
                 href="./index.html">Home</a>
-            <a style='border-top:#f75965 2px solid' class='col-1 links' data-aos='go-up' data-aos-delay="150" data-aos-anchor-placement="top-top"
+            <a style='border-top:#EDE3F2 2px solid' class='col-1 links' data-aos='go-up' data-aos-delay="150" data-aos-anchor-placement="top-top"
                 href="./us.html">About</a>
             <a class='col-1 links' data-aos='go-up' data-aos-delay="450" data-aos-anchor-placement="top-top"
                 href="./service.html">Service</a>
             <a class='col-1 links' data-aos='go-up' data-aos-delay="350" data-aos-anchor-placement="top-top"
                 href="./work.html">Ts & Cs</a>
-            <a class='offset-1 col-3 contact red' data-aos='go-up' data-aos-delay="550"
+            <a class='offset-2 col-2 contact red' data-aos='go-up' data-aos-delay="550"
                 data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
 
         </div>
         <img class='logoImg' src="assets/LogoLight.png" alt="company logo" data-aos='go-up' data-aos-delay="250"
             data-aos-anchor-placement="top-top">
         <div class="container-fluid page-purple first">
-            <div class='container-fluid text-center us white' data-shadow='Us.'>Us.</div>
+            <h1 class='offset-3 text-center us white p15' data-shadow='Us.' data-aos='go-up' data-aos-delay="100" data-aos-anchor=".textTop">Us.</h1>
         </div>
         <div class="container-fluid page-purple second">
-            <div class='container-fluid text-center textTop'>What are we?</div>
-            <div class='container offset-3 col-6 text-center textMid'>Imagine not having a “Q” or a “Mr Wonka” you can
+            <div class='container-fluid text-center textTop' data-aos="fade-up" data-aos-delay="300">What are we?</div>
+            <div class='container offset-3 col-6 text-center textMid' data-aos="fade-up" data-aos-delay="400">Imagine not having a “Q” or a “Mr Wonka” you can
                 contact for creative solutions to your problems. We couldn’t. So we’re
                 that.
             </div>
-            <div class='displaySquare text-center'>
+            <div class='displaySquare text-center' data-aos="fade-up" data-aos-delay="500">
                 <a class="typewrite white" data-period="2000"
                     data-type='["Engineers.", "Thinkers...", "{developers}" ]'>
                     <span class="wrap"></span>
@@ -121,10 +121,13 @@
             </div>
             <img class='usBGImg imgChangeUs' src="assets/engineers.png" alt="wrench">
             <div class='offset-5 textWatcher redWatcher'></div>
-            <div class='container-fluid text-center textFoot pink'>Meet the team</div>
+            <div class='container-fluid text-center textFoot pink' data-aos="fade-up" data-aos-delay="600">Meet the team</div>
         </div>
-        <div class='container-fluid page-red third threeMarshes parallax'></div>
-        <div class="container-fluid page-purple fourth" style="overflow-x: hidden">
+        <div class='container-fluid page-red third threeMarshes parallax'>
+            <div class='marshShape purpleWatcher'></div>
+            <div class='marshShapeBottom purpleWatcher'></div>
+        </div>
+        <div class="container-fluid page-purple fourth" style="overflow: hidden">
             <div class='heroTriangleBottomLeft'></div>
             <img class='tumbler' src="assets/MarshMallow.png" alt="Tumbler">
             <svg class='bounce' width="1923.213" height="1087.324" viewBox="0 0 1923.213 1087.324">
@@ -135,11 +138,11 @@
 
         </div>
         <div id="leoPage" class="container-fluid page-red fifth">
-            <div class='offset-5 col-5 text-left textHead leoHead'>Leo</div>
-            <div class='offset-5 col-2 nameLine'></div>
-            <div class='container'><img class='marshMallow' src="assets/Leo.png" alt="Leo"></div>
-            <div class='offset-5 col-5 text-left marshTitle purple'>Master Crafter</div>
-            <div class='offset-5 col-5 text-left marshContent pink'>Lorem ipsum dolor sit amet consectetur adipisicing
+            <div class='offset-5 col-5 text-left textHead leoHead' data-aos="fade-up" data-aos-delay="200">Leo</div>
+            <div class='offset-5 col-2 nameLine purple' data-aos="fade-up" data-aos-delay="100">Leonida Vitale</div>
+            <div class='container'><img class='marshMallow' src="assets/Leo.png" alt="Leo" data-aos="fade-right" data-aos-delay="400"></div>
+            <div class='offset-5 col-5 text-left marshTitle purple' data-aos="fade-left" data-aos-delay="400">Master Crafter</div>
+            <div class='offset-5 col-5 text-left marshContent pink' data-aos="fade-left" data-aos-delay="600">Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Dolorem dolores similique quas! Modi ab accusantium vitae eum consequuntur sunt odit tempore, <br>
                 <br>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo repellendus assumenda, ipsam ab
@@ -147,20 +150,20 @@
                 voluptate eius odit eum nam.
             </div>
             <div class='col-12 text-left socialIconsMarsh purple'>
-                <a class='offset-5 col-1 purple'href="mailto:leo.vitale@toastedmarshmallow.co?subject=Mail from Our Site""><i href="" class="fa fa-at"></i></a>
-                <a class='col-1 purple' href="https://www.linkedin.com/in/leonida-vitale-184551157"><i href="" class="fa fa-linkedin"></i></a>
+                <a data-aos="fade-up" data-aos-delay="550" class='offset-5 col-1 purple'href="mailto:leo.vitale@toastedmarshmallow.co?subject=Mail from Our Site""><i href="" class="fa fa-at"></i></a>
+                <a data-aos="fade-up" data-aos-delay="600" class='col-1 purple' href="https://www.linkedin.com/in/leonida-vitale-184551157"><i href="" class="fa fa-linkedin"></i></a>
                 <!-- <i href="" class="col-1 fa fa-github-alt"></i> -->
             </div>
         </div>
 
         <div id='tudesPage' class="container-fluid page-purple sixth">
-            <div class='offset-1 col-5 text-right textHead tudesHead white'>
+            <div class='offset-1 col-5 text-right textHead tudesHead white' data-aos="fade-up" data-aos-delay="200">
                 <p>Tudes</p>
             </div>
-            <div class='offset-4 col-2 nameLine'></div>
-            <div class='offset-7 container'><img class='marshMallow' src="assets/Tudor.png" alt="Tudes"></div>
-            <div class='offset-1 col-5 text-right marshTitle red'>Electronic Wizard</div>
-            <div class='offset-1 col-5 text-right marshContent pink'>Inspired by the things that cannot be taught, Tudor is our beacon. He inspires us all to find creative
+            <div class='offset-4 col-2 nameLine red text-right' data-aos="fade-up" data-aos-delay="250">Tudor Wolff</div>
+            <div class='offset-7 container'><img class='marshMallow' src="assets/Tudor.png" alt="Tudes" data-aos="fade-left" data-aos-delay="400"></div>
+            <div class='offset-1 col-5 text-right marshTitle red' data-aos="fade-right" data-aos-delay="450">Electronic Wizard</div>
+            <div class='offset-1 col-5 text-right marshContent pink' data-aos="fade-right" data-aos-delay="500">Inspired by the things that cannot be taught, Tudor is our beacon. He inspires us all to find creative
             solutions to
             problems, always aiming to impress the people using our products. He loves to hear things like “I can’t
             believe you
@@ -172,29 +175,29 @@
             mobile development
             side of Toasted Marshmallow through his abilities in C# and Swift.</div>
             <div class='col-6 text-right socialIconsMarsh red'>
-                <a class='col-1 red' href="mailto:tudor.wolff@toastedmarshmallow.co?subject=Mail from Our Site"><i class="fa fa-at"></i></a>
-                <a href="https://za.linkedin.com/in/tudor-wolff-03156810a" class='col-1 red'><i href="" class="col-1 fa fa-linkedin"></i></a>
+                <a data-aos="fade-up" data-aos-delay="550"class='col-1 red' href="mailto:tudor.wolff@toastedmarshmallow.co?subject=Mail from Our Site"><i class="fa fa-at"></i></a>
+                <a data-aos="fade-up" data-aos-delay="600" href="https://za.linkedin.com/in/tudor-wolff-03156810a" class='col-1 red'><i href="" class="col-1 fa fa-linkedin"></i></a>
                 <!-- <i href="" class="col-1 fa fa-github-alt"></i> -->
             </div>
             <div class='marshShape redWatcher'></div>
         </div>
         <div id='stevePage' class="container-fluid page-red seventh">
-            <div class='offset-5 col-5 text-left textHead steveHead'>
+            <div class='offset-5 col-5 text-left textHead steveHead' data-aos="fade-up" data-aos-delay="200">
                 <p>Steve</p>
             </div>
-            <div class='offset-5 col-2 nameLine'></div>
-            <div class='container'><img class='marshMallow' src="assets/Steve.png" alt="Steve"></div>
-            <div class='offset-5 col-5 text-left marshTitle purple'>The man on keys</div>
-            <div class='offset-5 col-5 text-left marshContent pink'>The manner in which Steve morphs visions into code is so elegant you'd swear he codes in a tux.
+            <div class='offset-5 col-2 nameLine purple' data-aos="fade-up" data-aos-delay="250">Steve Purkis</div>
+            <div class='container'><img class='marshMallow' src="assets/Steve.png" alt="Steve" data-aos="fade-right" data-aos-delay="300"></div>
+            <div class='offset-5 col-5 text-left marshTitle purple' data-aos="fade-left" data-aos-delay="400">The man on keys</div>
+            <div class='offset-5 col-5 text-left marshContent pink' data-aos="fade-left" data-aos-delay="450">The manner in which Steve morphs visions into code is so elegant you'd swear he codes in a tux.
             His solutions carry with them a dash of flair and a sprinkle of insanity.
             Steve dreams of one day being able to integrate telepathically with his text editor. <br>
             <br>
             "You can learn anything" - Sal Khan...This is what Steve mumbles to himself during late night debugging sessions.
             </div>
             <div class='col-12 text-left socialIconsMarsh purple'>
-                <a href="mailto:steve.purkis@toastedmarshmallow.co?subject=Mail from Our Site" class='purple offset-5 col-1 '><i href="" class="fa fa-at"></i></a>
-                <a href="https://za.linkedin.com/in/steve-purkis-4a7996190" class='purple col-1 '><i href="" class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/VoxPolly27" class='purple col-1'><i href="" class="fa fa-github-alt"></i></a>
+                <a data-aos="fade-up" data-aos-delay="500" href="mailto:steve.purkis@toastedmarshmallow.co?subject=Mail from Our Site" class='purple offset-5 col-1 '><i href="" class="fa fa-at"></i></a>
+                <a data-aos="fade-up" data-aos-delay="550" href="https://za.linkedin.com/in/steve-purkis-4a7996190" class='purple col-1 '><i href="" class="fa fa-linkedin"></i></a>
+                <a data-aos="fade-up" data-aos-delay="600" href="https://github.com/VoxPolly27" class='purple col-1'><i href="" class="fa fa-github-alt"></i></a>
             </div>
             <div class='marshShape purpleWatcher'></div>
         </div>

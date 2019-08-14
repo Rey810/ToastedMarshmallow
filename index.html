@@ -97,17 +97,17 @@
     <!-- Display for larger screens -->
     <div id="swup" class="transition-fade-right d-none d-lg-block">
         <img data-aos='go-up' data-aos-delay="800" data-aos-anchor-placement="top-top" class='logoImg' src="assets/LogoDark.png" alt="company logo">
-        <div class='container-fluid row text-center fixed-top' style="position: absolute">
+        <div class='col-12 row text-center fixed-top p10' style="position: fixed !important">
 
             <a style='border-top:#f2b3be 2px solid' class='offset-4 col-1 links' data-aos='go-up' data-aos-delay="250" data-aos-anchor-placement="top-top" href="index.html">Home</a>
             <a class='col-1 links' data-aos='go-up' data-aos-delay="150" data-aos-anchor-placement="top-top" href="us.html">About</a>
             <a class='col-1 links' data-aos='go-up' data-aos-delay="450" data-aos-anchor-placement="top-top" href="service.html">Service</a>
             <a class='col-1 links' data-aos='go-up' data-aos-delay="350" data-aos-anchor-placement="top-top" href="work.html">Ts & Cs</a>
-            <a class='offset-1 col-3 contact purple' data-aos='go-up' data-aos-delay="550" data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
+            <a class='offset-2 col-2 contact purple' data-aos='go-up' data-aos-delay="550" data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
 
         </div>
         <div class="container-fluid page-red first">
-            <svg class="logo" viewBox="-790 -200 1920 1080" data-aos='go-away' data-aos-delay="550" data-aos-anchor=".second">
+            <svg class="logo" viewBox="-790 -200 1920 1080" data-aos='go-away' data-aos-delay="150" data-aos-anchor=".second">
                 <defs>
                     <style>
                         .a {
@@ -186,9 +186,11 @@
             <div class='container-fluid text-center textBot' data-aos="fade-up" data-aos-duration="800">Yup, that's cool.
                 What else?
             </div>
-            <div class='heroTriangleBottomRight' data-aos="go-left" data-aos-duration="1000"></div>
+            <!-- <div class='heroTriangleBottomRight' data-aos="go-left" data-aos-duration="1000"></div> -->
         </div>
         <div class='container-fluid page-purple fourth' style="overflow: hidden">
+                        <div class='marshShape redWatcher'></div>
+                        <div class='marshShapeBottom purpleWatcher'></div>
             <div class='container-fluid text-center textTop white' data-aos="fade-up" data-aos-duration="800">We want to partner up with
                 you.
             </div>
@@ -200,16 +202,16 @@
             <img class='marshStick stick2' src="assets/marshStickLong.png" alt="Marshmallow">
             <img class='marshStick stick3' src="assets/marshStickLong.png" alt="Marshmallow">
             <div class='col-12 text-center imgBanner'>
-                <div class='displaySquare offer text-center'>
+                <div class='displaySquare offer text-center' data-aos="fade-up" data-aos-delay="700">
                     <a class="typewrite white" data-period="2000" data-type='["Apps", "websites", "designs", "simulations", "PCBs","protoyping", "SEO" ]'></a>
                     <span class="wrap"></span>
                 </div>
             </div>
             <img class='heroImage imageChanger' src="images/1.jpg" alt="Needs">
             <div class='offset-9 col-4 follow row text-left'>
-                <a class='col-12' onclick="contactOpen()">Yes! I need it all</a>
-                <a class='col-12' href="service.html">What else do you do?</a>
-                <a class='col-12' href="us.html">Who are you?</a>
+                <a class='col-12' onclick="contactOpen()" data-aos="fade-left" data-aos-delay="400">Yes! I need it all</a>
+                <a class='col-12' href="service.html" data-aos="fade-left" data-aos-delay="500">What else do you do?</a>
+                <a class='col-12' href="us.html" data-aos="fade-left" data-aos-delay="600">Who are you?</a>
             </div>
             <div class='offset-9 col-4 glass p50'></div>
         </div>

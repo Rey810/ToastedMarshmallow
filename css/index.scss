@@ -51,7 +51,6 @@
     url('../fonts/albas___.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
-    
 }
 
 // ________________2____________________
@@ -62,6 +61,7 @@
 }
 
 html{
+    max-width: 100vw;
     scroll-behavior: smooth;
     background: $red;
     margin: 0;
@@ -124,25 +124,28 @@ body {
     top: 78vh;
     left: auto;
     font-size: 85px;
+    z-index: 11;
 }
 
 .us {
     position: absolute;
-    // display: /block;
-    top: 0vh;
-    left: auto;
+    display: block;
+    // left: 25vw;
     font-size: 80vh;
-    // text-shadow: .03em .03em 0 $red;
     z-index: 1;
-    
+    // right: -25vw;
+    top:10vh;
+    // width: 100vw;
+    // margin: auto;
+    height: auto;
 }
 
 
 .us:after {
     content: attr(data-shadow);
-    position: absolute;
+    position: relative;
+    left: -41vw;
     top: 2px;
-    left: 25vw;
     z-index: -1;
     text-shadow: none;
     background-image:
@@ -270,12 +273,18 @@ body {
     z-index: 2;
 }
 
+// large logo on home page
+.logo{
+    position: fixed;
+    z-index: 10;
+}
+
 // ________________6____________________
 
 .contact {
-    font-size: 3vh !important;
+    font-size: 1.4em !important;
     position: fixed;
-    top: 70px;
+    // top: 70px;
     font-family: 'alba_matterregular';
     cursor: pointer;
     z-index: 2;
@@ -309,9 +318,9 @@ body {
 
 // ________________7___________________
 .links {
-    top: 10vh;
     font-size: 15px !important;
-    position: fixed;
+    // position: fixed !important;
+    top: 0vh;
     font-family: 'Work Sans', sans-serif;
     font-weight: bolder;
     z-index: 2;
@@ -911,6 +920,16 @@ svg{
     height: 10vh;
     border-bottom-right-radius: 1000%;
     border-bottom-left-radius: 1000%;
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+}
+.marshShapeBottom{
+    left: 0;
+    bottom: 0;
+    height: 10vh;
+    border-top-right-radius: 1000%;
+    border-top-left-radius: 1000%;
     width: 100vw;
     position: absolute;
     z-index: 3;
