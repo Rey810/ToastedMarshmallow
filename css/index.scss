@@ -63,14 +63,14 @@
 
 html{
     scroll-behavior: smooth;
-    background: #4a3655;
+    background: $red;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden !important;    
+    // -webkit-overflow-scrolling: touch;
 }
 body {
-    background: $red;
+    background: $purple;
     margin: 0;
     padding: 0;
     width: 100vw;
@@ -94,6 +94,7 @@ body {
     margin: 0;
     padding: 0;
     background: $red;
+    
 }
 
 .page-purple {
@@ -246,11 +247,11 @@ body {
     border-bottom: 100vh solid $purple;
     border-left: 100vw solid transparent;
     // filter: brightness(0.8);
-    overflow: visible;
+    // overflow: visible;
 }
 .heroTriangleBottomLeft {
     position: absolute;
-    overflow: visible;
+    // overflow: visible;
     right: 0;
     bottom: 0;
     // width: 100vw;
@@ -907,17 +908,64 @@ svg{
 .marshShape{
     left: 0;
     top: 0;
-    height: 100vh;
-    border-top-right-radius: 1000%;
+    height: 10vh;
     border-bottom-right-radius: 1000%;
-    width: 60px;
+    border-bottom-left-radius: 1000%;
+    width: 100vw;
     position: absolute;
     z-index: 3;
 }
 
+.threeMarshes{
+        /* The image used */
+        background-image: url("../assets/Footer@2x.png");
+
+        /* Set a specific height */
+        height: 100vh;
+
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+}
+ 
 //_______________18_________________
 //              index
 
+.melt{
+
+            background-image: url("../assets/melt.png");
+            // height: 80vh;
+            // background-size: 2000px 1000px;
+            background-position-x: -20vw;
+            // background-position-y: -10vh;
+            background-size: 150vw 100vh;
+
+}
+.melt2{
+
+            background-image: url("../assets/melt2.png");
+            // height: 80vh;
+            // background-size: 2000px 1000px;
+            background-position-x: -20vw;
+            // background-position-y: -10vh;
+            background-size: 150vw 100vh;
+
+}
+.melt3{
+
+            background-image: url("../assets/melt3.png");
+            // height: 80vh;
+            // background-size: 2000px 1000px;
+            background-position-x: -20vw;
+            // background-position-y: -10vh;
+            background-size: 150vw 100vh;
+
+}
 .marshStick{
     position: absolute;
     z-index: 3;
@@ -967,6 +1015,7 @@ svg{
     // background: $red;
     font-family: 'Work Sans',sans-serif;
     z-index: 3;
+    font-weight: 700;
     a{
         color: $white !important;
         border-bottom: 2px solid $red;
@@ -988,26 +1037,19 @@ svg{
     overflow: hidden;
     z-index: 0;
     height: auto;
-    max-height: 115vh;
+    min-height: 100vh;
     width: 100vw;
     top: 0;
     left: 0;
-    background-size: contain;
-    filter: blur(5px);
+    // filter: blur(5px);
 }
 
-
-
-
-.sub-frosted-glass{
-    position: absolute;
-    margin: 0;
-    left: 0;
-    padding: 0;
+.glass{
+    background: $purple;
+    opacity: 0.7;
     z-index: 1;
-    background: $black;
-    opacity: 0.3;
-    // filter: blur(10px);
-    width: 100vw;
-    height: 100vh;
+    height: 30vh;
+    position: absolute;
 }
+
+

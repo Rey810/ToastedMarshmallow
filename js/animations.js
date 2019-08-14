@@ -169,27 +169,27 @@ var animationWatcher = animeLib({
 
 
 // Function for smooth scroll
-$(window).on('wheel', function (event) {
-    // console.log(window.scrollY);
-    var $page = Math.floor(window.scrollY / window.innerHeight);
-    // console.log($page);
-    if (event.originalEvent.deltaY < 0) {
-        // wheeled up
-        window.scrollBy(0, -window.innerHeight);
-        // $('html').animate({
-        //     scrollTop: ($page-1) * window.innerHeight,
-        //     scrollLeft: 0
-        // }, { easing: "swing", duration: 5 })
-    }
-    else {
-        // wheeled down
-        window.scrollBy(0, window.innerHeight);
-        // $('html').animate({
-        //     scrollTop: ($page+1) * window.innerHeight,
-        //     scrollLeft: 0
-        // }, { easing: "swing", duration: 40 })
-    }
-})
+// $(window).on('wheel', function (event) {
+//     // console.log(window.scrollY);
+//     var $page = Math.floor(window.scrollY / window.innerHeight);
+//     // console.log($page);
+//     if (event.originalEvent.deltaY < 0) {
+//         // wheeled up
+//         window.scrollBy(0, -window.innerHeight);
+//         // $('html').animate({
+//         //     scrollTop: ($page-1) * window.innerHeight,
+//         //     scrollLeft: 0
+//         // }, { easing: "swing", duration: 5 })
+//     }
+//     else {
+//         // wheeled down
+//         window.scrollBy(0, window.innerHeight);
+//         // $('html').animate({
+//         //     scrollTop: ($page+1) * window.innerHeight,
+//         //     scrollLeft: 0
+//         // }, { easing: "swing", duration: 40 })
+//     }
+// })
 
  // function for text typeWriter
  var TxtType = function (el, toRotate, period) {

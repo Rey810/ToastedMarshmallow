@@ -123,7 +123,8 @@
             <div class='offset-5 textWatcher redWatcher'></div>
             <div class='container-fluid text-center textFoot pink'>Meet the team</div>
         </div>
-        <div class="container-fluid page-purple third" style="overflow-x: hidden">
+        <div class='container-fluid page-red third threeMarshes parallax'></div>
+        <div class="container-fluid page-purple fourth" style="overflow-x: hidden">
             <div class='heroTriangleBottomLeft'></div>
             <img class='tumbler' src="assets/MarshMallow.png" alt="Tumbler">
             <svg class='bounce' width="1923.213" height="1087.324" viewBox="0 0 1923.213 1087.324">
@@ -133,7 +134,7 @@
             </svg>
 
         </div>
-        <div id="leoPage" class="container-fluid page-red fourth">
+        <div id="leoPage" class="container-fluid page-red fifth">
             <div class='offset-5 col-5 text-left textHead leoHead'>Leo</div>
             <div class='offset-5 col-2 nameLine'></div>
             <div class='container'><img class='marshMallow' src="assets/Leo.png" alt="Leo"></div>
@@ -152,8 +153,7 @@
             </div>
         </div>
 
-        <div id='tudesPage' class="container-fluid page-purple fourth middle"
-            style="overflow-y: hidden !important; overflow-x: scroll !important">
+        <div id='tudesPage' class="container-fluid page-purple sixth">
             <div class='offset-1 col-5 text-right textHead tudesHead white'>
                 <p>Tudes</p>
             </div>
@@ -178,8 +178,7 @@
             </div>
             <div class='marshShape redWatcher'></div>
         </div>
-        <div id='stevePage' class="container-fluid page-red fourth right"
-            style="overflow-y: hidden !important; overflow-x: scroll !important">
+        <div id='stevePage' class="container-fluid page-red seventh">
             <div class='offset-5 col-5 text-left textHead steveHead'>
                 <p>Steve</p>
             </div>
@@ -403,24 +402,24 @@
         })
 
 
-        // window.onwheel = preventDefault;
-        $(window).on('wheel', function (event) {
+        // // window.onwheel = preventDefault;
+        // $(window).on('wheel', function (event) {
     
-            // console.log(window.scrollY);
-            var $page = Math.floor(window.scrollY / window.innerHeight);
-            console.log($page)
-            var $horizontalPage = (Math.floor(window.scrollX / window.innerWidth));
-            if ($page == 3) {
-                if (event.originalEvent.deltaY < 0) {
-                    // wheeled down
-                    window.scrollBy(-window.innerWidth, 0);
+        //     // console.log(window.scrollY);
+        //     var $page = Math.floor(window.scrollY / window.innerHeight);
+        //     console.log($page)
+        //     var $horizontalPage = (Math.floor(window.scrollX / window.innerWidth));
+        //     if ($page == 3) {
+        //         if (event.originalEvent.deltaY < 0) {
+        //             // wheeled down
+        //             window.scrollBy(-window.innerWidth, 0);
 
-                } else if (event.originalEvent.deltaY > 0){
-                    window.scrollBy(window.innerWidth, 0);
-                }
+        //         } else if (event.originalEvent.deltaY > 0){
+        //             window.scrollBy(window.innerWidth, 0);
+        //         }
 
-            }
-        })
+        //     }
+        // })
     </script>
 </body>
 
