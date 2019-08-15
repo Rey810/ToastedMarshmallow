@@ -382,4 +382,7 @@ function scrollToTop(){
         scrollTop: 0
     }, 500);
 }
+function scrollDown(){
+    window.scrollTo(0, 2 * window.innerHeight);
+}
 

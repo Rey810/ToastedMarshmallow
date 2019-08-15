@@ -377,9 +377,10 @@ body {
 .arrow {
     fill: none;
     transform-origin: 50% 50%;
-    z-index: 5;
+    z-index: 10;
     transform: translate(-327px, 430px) scale(0.5);
     position: fixed;
+    cursor: pointer;
 }
 .arrow-lg {
     stroke: #4a3655;
@@ -392,6 +393,9 @@ body {
 }
 
 // ________________9___________________
+.textLarge{
+font-size: 3em;
+}
 .textHead {
     font-size: 35px;
     top: 20%;
@@ -716,12 +720,14 @@ body {
     right: 0;
     height: auto;
     width: 90vw;
-    }
-    
+}
+
+z-index: 10;
 
     .footerLinks{
         position: absolute;
         top: 15vh;
+        cursor: pointer;
         left: 0;
         // background: $red;
         height: 2vh;
@@ -817,7 +823,7 @@ svg{
     font-weight: 700;
     top: 33vh;
     height: auto;
-    z-index: 7;
+    z-index: 20;
     width: 60vw;
     border-radius: 100px;
     transition: 0.2s ease-in;

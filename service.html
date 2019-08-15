@@ -98,37 +98,40 @@
     <div id="swup" class="transition-fade-right d-none d-lg-block">
         <img class='logoImg' src="assets/LogoDark.png" alt="company logo">
         <div class='col-12 row text-center fixed-top p10' style="position: fixed !important">
-        
-            <a class='offset-4 col-1 links purple' data-aos='go-up' data-aos-delay="250" data-aos-anchor-placement="top-top"
-                href="./index.html">Home</a>
-            <a  class='col-1 links purple' data-aos='go-up' data-aos-delay="150"
-                data-aos-anchor-placement="top-top" href="./us.html">About</a>
-            <a style='border-top:#f75965 2px solid' class='col-1 links purple' data-aos='go-up' data-aos-delay="450" data-aos-anchor-placement="top-top"
-                href="./service.html">Service</a>
-            <a class='col-1 links purple' data-aos='go-up' data-aos-delay="350" data-aos-anchor-placement="top-top"
-                href="./work.html">Ts & Cs</a>
-            <a class='offset-2 col-2 contact red' data-aos='go-up' data-aos-delay="550" data-aos-anchor-placement="top-top"
-                onclick="contactOpen()">Contact</a>
-        
+
+            <a class='offset-7 col-1 links purple' data-aos='go-up' data-aos-delay="250"
+                data-aos-anchor-placement="top-top" href="./index.html">Home</a>
+            <a class='col-1 links purple' data-aos='go-up' data-aos-delay="150" data-aos-anchor-placement="top-top"
+                href="./us.html">About</a>
+            <a style='border-top:#f75965 2px solid' class='col-1 links purple' data-aos='go-up' data-aos-delay="450"
+                data-aos-anchor-placement="top-top" href="./service.html">Service</a>
+            <!-- <a class='col-1 links purple' data-aos='go-up' data-aos-delay="350" data-aos-anchor-placement="top-top"
+                href="./work.html">Ts & Cs</a> -->
+            <a class='col-2 contact red' data-aos='go-up' data-aos-delay="550"
+                data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
+
         </div>
         <div class="container-fluid page-white first">
             <p class='textFoot offset-4 text-center red' data-aos="fade-up" data-aos-delay="100">Things we do</p>
             <svg viewBox="-550 -200 1920 1080" data-aos="fade-up" data-aos-delay="150">
-                <g class="arrow">
+                <g class="arrow" onclick="scrollDown()">
                     <line class="arrow-lg" x2="45" y2="40" transform="translate(1.66 1.523)" />
                     <line class="arrow-lg" x1="47" y2="40" transform="translate(43.66 1.523)" />
                     <line class="arrow-sm" x2="33" y2="29" transform="translate(0.66 14.523)" />
                     <line class="arrow-sm" x1="33" y2="29" transform="translate(58.66 14.523)" />
                 </g>
             </svg>
-            <div class='container-fluid service red' data-aos="go-up" data-aos-delay="200" data-aos-anchor=".second">Services</div>
-            <img class='marshStick' src="assets/MarshStick.png" alt="Marshmallow on a stick" data-aos="go-up" data-aos-delay="400" data-aos-anchor=".second">
+            <div class='container-fluid service red' data-aos="go-up" data-aos-delay="200" data-aos-anchor=".second">
+                Services</div>
+            <img class='marshStick' src="assets/MarshStick.png" alt="Marshmallow on a stick" data-aos="go-up"
+                data-aos-delay="400" data-aos-anchor=".second">
         </div>
         <div class='page-white second melt2'></div>
         <div id="webPage" class='container-fluid page-white third'>
-            <div class="col-6 text-center black textHead" data-aos="fade-right" data-aos-delay="300">Web Development</div>
+            <div class="col-6 text-center black textHead" data-aos="fade-right" data-aos-delay="300">Web Development
+            </div>
             <div class='offset-2 textWatcher redWatcher'></div>
-            <img id="web" src="svg/web.svg" onload="SVGInject(this)"/>
+            <img id="web" src="svg/web.svg" onload="SVGInject(this)" />
             <p class='offset-1 col-4 text-center textMid headWatcher purple' data-aos="fade-right" data-aos-delay="500">
                 We love building websites.
                 To us, your webpage is your entire
@@ -142,7 +145,8 @@
 
                 <div class='offset-1 container row technicalInfo red'>
                     <a class='redWatcher white technicals' data-aos="fade-up" data-aos-delay="600">wireframes</a>
-                    <a class='redWatcher white technicals' data-aos="fade-up" data-aos-delay="800">data visualisation</a>
+                    <a class='redWatcher white technicals' data-aos="fade-up" data-aos-delay="800">data
+                        visualisation</a>
                     <a class='redWatcher white technicals' data-aos="fade-up" data-aos-delay="700">deployment</a>
                 </div>
                 <div class='offset-2 container row technicalInfo lower red'>
@@ -193,11 +197,11 @@
                             .e {
                                 stroke: #EDE3F2;
                             }
-        
+
                             .x {
                                 stroke: #EDE3F2;
                             }
-        
+
                             .extra {
                                 stroke: #EDE3F2;
                                 < !-- opacity: 0;
@@ -226,12 +230,10 @@
                 <a class='purpleWatcher white technicals'>electrical simulations</a>
                 <a class='purpleWatcher white technicals'>documents</a>
             </div>
-        
+
             <img id="robot" src="svg/robot.svg" onload="SVGInject(this)" />
-            <div class='marshShapeBottom purpleWatcher'></div>
         </div>
         <div class='container-fluid foot sixth'>
-            
             <img src="assets/marshStickLong.png" alt="Footer Image" data-aos='fade-left' data-aos-delay="600">
             <svg onclick="scrollToTop()" class='toTop' width="93.079" height="45.879">
                 <g transform="translate(92.307 45.878) rotate(-179)">
@@ -247,23 +249,23 @@
             </div>
             <div class='footerLinks container-fluid white'>
                 <div class='row'>
-                    <a href="" class='offset-4 col-1'>Home</a>
-                    <a href="" class='col-1'>Us</a>
-                    <a href="" class='col-1'>Services</a>
-                    <a href="" class='col-1'>Ts and Cs</a>
-                    <a href="" class='col-1'>Contact us</a>
+                    <a href="index.html" class='offset-4 col-1'>Home</a>
+                    <a href="us.html" class='col-1'>Us</a>
+                    <a href="service.html" class='col-1'>Services</a>
+                    <a href="work.html" class='col-1'>Ts and Cs</a>
+                    <p onclick="contactOpen()" class='col-1'>Contact us</p>
                 </div>
                 <div class="row">
-                    <a href="" class='offset-5 col-1'>Leo</a>
-                    <a href="" class='col-1'>Engineering</a>
+                    <a href="us.html" class='offset-5 col-1'>Leo</a>
+                    <a href="service.html" class='col-1'>Engineering</a>
                 </div>
                 <div class="row">
-                    <a href="" class='offset-5 col-1'>Tudes</a>
-                    <a href="" class='col-1'>Applications</a>
+                    <a href="us.html" class='offset-5 col-1'>Tudes</a>
+                    <a href="service.html" class='col-1'>Applications</a>
                 </div>
                 <div class="row">
-                    <a href="" class='offset-5 col-1'>Steve</a>
-                    <a href="" class='col-1'>Web</a>
+                    <a href="us" class='offset-5 col-1'>Steve</a>
+                    <a href="service.html" class='col-1'>Web</a>
                 </div>
             </div>
         </div>
@@ -392,16 +394,16 @@
                 <a class='text-center pinkWatcher purple mobileBlurb'>responsive design</a>
             </div>
         </div>
-                <div class='footMobile fifth'>
-                    <img class='offset-7 col-5' src="assets/LogoLight.png" alt="LogoLight">
-                    <i onclick='scrollToTop()' class="p5 container-fluid text-right fa fa-chevron-up white"></i>
-                    <a class='offset-1 col-5 mobileText p5 mobileFootLinks' href="index.html">Home</a>
-                    <a class='offset-1 col-5 mobileText p10 mobileFootLinks' href="us.html">Us</a>
-                    <a class='offset-1 col-5 mobileText p15 mobileFootLinks' href="service.html">Services</a>
-                    <a class='offset-1 col-5 mobileText p20 mobileFootLinks' href="work.html">T's and C's</a>
-                    <a class='offset-1 col-5 mobileText p25 mobileFootLinks'>contact</a>
-                    <a class='col-12 text-center p35 mobileToe white'>Toasted Marshmallow (Pty) Ltd</a>
-                </div>
+        <div class='footMobile fifth'>
+            <img class='offset-7 col-5' src="assets/LogoLight.png" alt="LogoLight">
+            <i onclick='scrollToTop()' class="p5 container-fluid text-right fa fa-chevron-up white"></i>
+            <a class='offset-1 col-5 mobileText p5 mobileFootLinks' href="index.html">Home</a>
+            <a class='offset-1 col-5 mobileText p10 mobileFootLinks' href="us.html">Us</a>
+            <a class='offset-1 col-5 mobileText p15 mobileFootLinks' href="service.html">Services</a>
+            <a class='offset-1 col-5 mobileText p20 mobileFootLinks' href="work.html">T's and C's</a>
+            <a class='offset-1 col-5 mobileText p25 mobileFootLinks'>contact</a>
+            <a class='col-12 text-center p35 mobileToe white'>Toasted Marshmallow (Pty) Ltd</a>
+        </div>
     </div>
     <!-- JavaScript Libraries -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -416,7 +418,7 @@
     <script>
         // const swup = new Swup();
         animeLib({
-            targets: ['#web clipPath','#web rect'],
+            targets: ['#web clipPath', '#web rect'],
             easing: 'easeInOutQuint',
             direction: 'alternate',
             duration: 500,

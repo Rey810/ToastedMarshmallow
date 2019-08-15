@@ -812,10 +812,11 @@ body {
   fill: none;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
-  z-index: 5;
+  z-index: 10;
   -webkit-transform: translate(-327px, 430px) scale(0.5);
           transform: translate(-327px, 430px) scale(0.5);
   position: fixed;
+  cursor: pointer;
 }
 
 .arrow-lg {
@@ -827,6 +828,10 @@ body {
   stroke: #F75965;
   stroke-width: 2px;
   opacity: 1;
+}
+
+.textLarge {
+  font-size: 3em;
 }
 
 .textHead {
@@ -1148,6 +1153,7 @@ body {
   height: 30vh !important;
   background: #4A3655;
   overflow: hidden !important;
+  z-index: 10;
 }
 
 .foot i {
@@ -1174,6 +1180,7 @@ body {
 .foot .footerLinks {
   position: absolute;
   top: 15vh;
+  cursor: pointer;
   left: 0;
   height: 2vh;
   color: #EDE3F2 !important;
@@ -1258,7 +1265,7 @@ svg .c {
   font-weight: 700;
   top: 33vh;
   height: auto;
-  z-index: 7;
+  z-index: 20;
   width: 60vw;
   border-radius: 100px;
   -webkit-transition: 0.2s ease-in;
