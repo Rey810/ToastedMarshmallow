@@ -351,7 +351,7 @@ html.is-animating .transition-fade-right {
 
 .mobileCharText {
   font-family: 'Work Sans',sans-serif;
-  font-size: 1.80vh;
+  font-size: 0.85em;
   font-weight: 700;
 }
 
@@ -746,10 +746,9 @@ body {
 }
 
 .links {
-  font-size: 15px !important;
+  font-size: 1em;
   top: 0vh;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: bolder;
+  font-family: 'albaregular';
   z-index: 2;
   color: #EDE3F2;
   -webkit-transition: 0.3s ease-in-out;
@@ -1038,10 +1037,11 @@ body {
 
 .marshContent {
   top: 30vh;
-  font-size: 1.2em;
+  font-size: 1.1em;
   position: absolute;
-  font-weight: 100;
+  font-weight: bold;
   letter-spacing: 2px;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .nameLine {

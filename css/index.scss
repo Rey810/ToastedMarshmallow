@@ -318,11 +318,11 @@ body {
 
 // ________________7___________________
 .links {
-    font-size: 15px !important;
+    font-size: 1em;
     // position: fixed !important;
     top: 0vh;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: bolder;
+    font-family: 'albaregular';
+    // font-weight: bolder;
     z-index: 2;
     color: $white;
     transition: 0.3s ease-in-out;
@@ -586,10 +586,12 @@ font-size: 3em;
 }
 .marshContent{
     top: 30vh;
-    font-size: 1.2em;
+    font-size: 1.1em;
     position: absolute;
-    font-weight: 100;
+    font-weight: bold;
     letter-spacing: 2px;
+    font-family: 'Work Sans', sans-serif;
+    // font-family: 'Courier New', Courier, monospace;
     // text-shadow: 2px 2px 4px #4A3655;
 }
 
