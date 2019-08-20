@@ -99,10 +99,10 @@
         <img data-aos='go-up' data-aos-delay="800" data-aos-anchor-placement="top-top" class='logoImg' src="assets/LogoDark.png" alt="company logo">
         <div class='col-12 row text-center fixed-top p10' style="position: fixed !important">
 
-            <a style='border-top:#f2b3be 2px solid' class='offset-7 col-1 links' data-aos='go-up' data-aos-delay="250" data-aos-anchor-placement="top-top" href="index.html">Home</a>
+            <a class='offset-7 col-1 links' data-aos='go-up' data-aos-delay="250" data-aos-anchor-placement="top-top" href="index.html" style="opacity: 1;">Home</a>
             <a class='col-1 links' data-aos='go-up' data-aos-delay="150" data-aos-anchor-placement="top-top" href="us.html">About</a>
             <a class='col-1 links' data-aos='go-up' data-aos-delay="450" data-aos-anchor-placement="top-top" href="service.html">Service</a>
-            <a class='col-2 contact purple' data-aos='go-up' data-aos-delay="550" data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
+            <a class='col-2 contact white' data-aos='go-up' data-aos-delay="550" data-aos-anchor-placement="top-top" onclick="contactOpen()">Contact</a>
 
         </div>
         <div class="container-fluid page-red first">
@@ -376,10 +376,18 @@
         })
 
         var animationFadeIn = animeLib({
-            targets: ['.logoImg', '.links', '.contact', '.linksWatcher', '.arrow'],
+            targets: ['.logoImg', '.contact', '.linksWatcher', '.arrow'],
             duration: 1000,
             easing: 'easeInSine',
             opacity: 1,
+            delay: 3000,
+        })
+
+        var linkFadeIn = animeLib({
+            targets: ['.links'],
+            duration: 1000,
+            easing: 'easeInSine',
+            opacity: 0.75,
             delay: 3000,
         })
 

@@ -712,19 +712,20 @@ body {
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   letter-spacing: 0.15em;
+  border: #F75965 0.15em solid;
+  max-width: 10% !important;
+  border-radius: 0.2em;
+  margin-left: 2em;
 }
 
 .contact:hover {
   background: #F75965;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.86) !important;
 }
 
 .red {
-  border: #F75965 0.15em solid;
-  color: rgba(255, 255, 255, 0.86) !important;
-  max-width: 10% !important;
-  border-radius: 0.2em;
-  margin-left: 2em;
+  color: #F75965 !important;
 }
 
 .alba {
@@ -734,6 +735,7 @@ body {
 
 .purple {
   color: #4A3655 !important;
+  opacity: 0.90;
 }
 
 .white {
@@ -760,7 +762,7 @@ body {
 }
 
 .links:hover {
-  opacity: 1;
+  opacity: 1  !important;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.9);
 }

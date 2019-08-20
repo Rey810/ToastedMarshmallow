@@ -290,18 +290,22 @@ body {
     z-index: 20;
     transition: 0.3s ease-in-out;
     letter-spacing: 0.15em;
-    &:hover{
-        background: $red;
-        text-decoration: none;
-    }
-}
-
-.red{
     border: $red 0.15em solid;
-    color: $white !important;
     max-width: 10% !important;
     border-radius: 0.2em;
     margin-left: 2em;
+
+    &:hover{
+        background: $red;
+        text-decoration: none;
+        color: $white   !important;
+    }
+}
+
+.red {
+
+    color: $red !important;
+
 }
 .alba{
     font-family: 'albaregular' !important;
@@ -309,6 +313,7 @@ body {
 }
 .purple{
     color: $purple !important;
+    opacity: 0.90;
 }
 .white{
     color: $white !important;
@@ -332,7 +337,7 @@ body {
     opacity: 0.75;
     transition: 0.3s ease-in-out;
     &:hover {
-        opacity: 1;
+        opacity: 1  !important;
         text-decoration: none;
         color: hsla(0, 0%, 100%, 0.9); 
     }
