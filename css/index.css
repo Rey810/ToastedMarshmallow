@@ -409,7 +409,7 @@ html.is-animating .transition-fade-right {
 }
 
 .mobileFootLinks {
-  color: #EDE3F2 !important;
+  color: rgba(255, 255, 255, 0.86) !important;
   border-bottom: 1px solid #F75965;
 }
 
@@ -539,7 +539,7 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
-  background: #EDE3F2;
+  background: rgba(255, 255, 255, 0.86);
 }
 
 .page-pink {
@@ -704,24 +704,27 @@ body {
 }
 
 .contact {
-  font-size: 1.4em !important;
+  font-size: 1.15em;
   position: fixed;
   font-family: 'alba_matterregular';
   cursor: pointer;
   z-index: 20;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  letter-spacing: 0.15em;
 }
 
 .contact:hover {
-  color: #EDE3F2;
+  background: #F75965;
   text-decoration: none;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
 }
 
 .red {
-  color: #F75965 !important;
+  border: #F75965 0.15em solid;
+  color: rgba(255, 255, 255, 0.86) !important;
+  max-width: 10% !important;
+  border-radius: 0.2em;
+  margin-left: 2em;
 }
 
 .alba {
@@ -734,7 +737,7 @@ body {
 }
 
 .white {
-  color: #EDE3F2 !important;
+  color: rgba(255, 255, 255, 0.86) !important;
 }
 
 .pink {
@@ -746,23 +749,20 @@ body {
 }
 
 .links {
-  font-size: 1em;
+  font-size: 1.1em;
   top: 0vh;
   font-family: 'albaregular';
   z-index: 2;
-  color: #EDE3F2;
+  color: rgba(255, 255, 255, 0.86);
+  opacity: 0.75;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .links:hover {
-  border-bottom: 2px solid !important;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  opacity: 1;
   text-decoration: none;
-  color: #EDE3F2;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .menuIndicator {
@@ -804,7 +804,7 @@ body {
 }
 
 .whiteWatcher {
-  background: #EDE3F2 !important;
+  background: rgba(255, 255, 255, 0.86) !important;
 }
 
 .arrow {
@@ -846,7 +846,7 @@ body {
   font-size: 3vh;
   top: 22%;
   position: absolute;
-  color: #EDE3F2;
+  color: rgba(255, 255, 255, 0.86);
   z-index: 2;
   font-weight: lighter;
 }
@@ -855,7 +855,7 @@ body {
   font-size: 3.8vh;
   top: 35%;
   position: absolute;
-  color: #EDE3F2;
+  color: rgba(255, 255, 255, 0.86);
   font-weight: 500;
   z-index: 2;
   font-family: 'Work Sans', sans-serif;
@@ -908,7 +908,7 @@ body {
 
 .contactPage {
   position: fixed;
-  background: #EDE3F2;
+  background: rgba(255, 255, 255, 0.86);
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   left: 10vw;
@@ -1183,14 +1183,14 @@ body {
   cursor: pointer;
   left: 0;
   height: 2vh;
-  color: #EDE3F2 !important;
+  color: rgba(255, 255, 255, 0.86) !important;
   font-family: 'Work Sans',sans-serif;
 }
 
 .foot .footerLinks a {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  color: #EDE3F2 !important;
+  color: rgba(255, 255, 255, 0.86) !important;
   font-size: 15px;
 }
 
@@ -1199,7 +1199,7 @@ body {
   bottom: 30px;
   font-family: 'Work Sans', sans-serif;
   font-size: 15px;
-  color: #EDE3F2;
+  color: rgba(255, 255, 255, 0.86);
   position: absolute;
 }
 
@@ -1464,7 +1464,7 @@ svg .c {
 }
 
 .follow a {
-  color: #EDE3F2 !important;
+  color: rgba(255, 255, 255, 0.86) !important;
   border-bottom: 2px solid #F75965;
   margin: 10px;
   -webkit-transition: 0.2s ease;
@@ -1472,7 +1472,7 @@ svg .c {
 }
 
 .follow a:hover {
-  border-bottom: 4px solid #EDE3F2;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.86);
   text-decoration: none !important;
   font-weight: 700;
   cursor: pointer;

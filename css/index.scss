@@ -282,22 +282,26 @@ body {
 // ________________6____________________
 
 .contact {
-    font-size: 1.4em !important;
+    font-size: 1.15em;
     position: fixed;
     // top: 70px;
     font-family: 'alba_matterregular';
     cursor: pointer;
     z-index: 20;
     transition: 0.3s ease-in-out;
+    letter-spacing: 0.15em;
     &:hover{
-        color: $white;
+        background: $red;
         text-decoration: none;
-        transform: scale(1.2);
     }
 }
 
 .red{
-    color: $red !important;
+    border: $red 0.15em solid;
+    color: $white !important;
+    max-width: 10% !important;
+    border-radius: 0.2em;
+    margin-left: 2em;
 }
 .alba{
     font-family: 'albaregular' !important;
@@ -318,21 +322,21 @@ body {
 
 // ________________7___________________
 .links {
-    font-size: 1em;
+    font-size: 1.1em;
     // position: fixed !important;
     top: 0vh;
     font-family: 'albaregular';
     // font-weight: bolder;
     z-index: 2;
     color: $white;
+    opacity: 0.75;
     transition: 0.3s ease-in-out;
     &:hover {
-        border-bottom: 2px solid !important;
-        transition: 0.3s ease-in-out;
+        opacity: 1;
         text-decoration: none;
-        color: $white;
-        transform: scale(1.1);  
+        color: hsla(0, 0%, 100%, 0.9); 
     }
+
 }
 
 .menuIndicator{
