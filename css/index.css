@@ -767,6 +767,12 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.fixed-top {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .menuIndicator {
   height: 25px;
   width: 25px;
